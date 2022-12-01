@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liftoff Project", "Liftoff Project.csproj", "{7F6BE8E2-A66F-4B31-B524-DB072B1A4138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F6BE8E2-A66F-4B31-B524-DB072B1A4138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6BE8E2-A66F-4B31-B524-DB072B1A4138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6BE8E2-A66F-4B31-B524-DB072B1A4138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6BE8E2-A66F-4B31-B524-DB072B1A4138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F660BF0-3338-4773-85CC-F3A3FE35B536}
+	EndGlobalSection
+EndGlobal
