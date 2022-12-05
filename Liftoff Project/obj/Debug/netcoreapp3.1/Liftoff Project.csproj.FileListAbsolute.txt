@@ -98,3 +98,6 @@ C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CompareBracket.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CreateBracket.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\Index.cshtml.g.cs
