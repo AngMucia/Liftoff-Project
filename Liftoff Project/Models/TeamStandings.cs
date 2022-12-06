@@ -3,18 +3,18 @@
     public class TeamStandings
     {
 
-            public string team_id { get; set; }
-            public string mp { get; set; }
-            public string w { get; set; }
-            public string l { get; set; }
-            public string pts { get; set; }
-            public string gf { get; set; }
-            public string ga { get; set; }
-            public string gd { get; set; }
-            public string d { get; set; }
-            public string name_fa { get; set; }
-            public string name_en { get; set; }
-            public string flag { get; set; }
+            public string Team_Id { get; set; }
+            public string Mp { get; set; } //matches played
+            public string W { get; set; } // win
+            public string L { get; set; } // losses
+            public string Pts { get; set; } //points
+            public string Gf { get; set; } // goals for
+            public string Ga { get; set; } // goals against
+            public string Gd { get; set; } // goals difference
+            public string D { get; set; } //draws
+            public string Name_fa { get; set; } //names in some language
+            public string Name_en { get; set; } //names in english
+            public string Flag { get; set; } //flag
         
 
     }
