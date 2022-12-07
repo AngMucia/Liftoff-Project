@@ -6,7 +6,16 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome To World Cup Bracket Maker</h1>
-   <table class="table table-striped">
+   
+    <form asp-controller="Home" asp-action="SearchTeam" method="post">
+        <input type="text" name="searchItem" />
+        <span class="text-warning">@ViewBag.error</span>
+        <input type="submit" value="submit" />
+        
+
+    </form>
+    
+    <table class="table table-striped">
        <thead>
            <tr>
                 <th>
@@ -17,18 +26,18 @@
                </th>
            </tr>
        </thead>
-       <tbody>@foreach(var row in Model)
-            {
-                @if (row.Name_en != "--")
+       <tbody>
+                @foreach (var row in Model)
                 {
-                    <tr>
-                        <td> <img src="@row.Flag" /> </td>
-                        <td>@row.Name_en</td>
-                    </tr>
-                    
-                }             
-            }
+                    @if (row.Name_en != "--")
+                    {
+                        <tr>
+                            <td> <img src="@row.Flag" /> </td>
+                            <td>@row.Name_en</td>
+                        </tr>
+                    }
 
+                }
        </tbody>
    </table>
 </div>
