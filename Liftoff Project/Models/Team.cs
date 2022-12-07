@@ -10,6 +10,9 @@
             public string Iso2 { get; set; }
             public string Groups { get; set; }
             public string Id { get; set; }
+
+            
+            
         
 
     }
