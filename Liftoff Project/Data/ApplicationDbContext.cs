@@ -24,12 +24,12 @@ namespace Liftoff_Project.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           base.OnModelCreating(modelBuilder);
+           
             modelBuilder.Entity<TeamPlayer>()
                 .ToTable("Team_Player").HasKey(tp => new { tp.PlayerId, tp.TeamId });
             modelBuilder.Entity<FavoriteTeams>()
                 .ToTable("Favorite_Teams").HasKey(f => new { f.UserId, f.TeamId });
-            
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
