@@ -3,6 +3,7 @@
     public class TeamStats
     {
 
+            public string TeamId { get; set; }
             public string Team { get; set; }
             public string Date_US_Eastern { get; set; }
             public string Time_US_Eastern { get; set; }

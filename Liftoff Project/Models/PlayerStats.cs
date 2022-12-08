@@ -1,13 +1,14 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Liftoff_Project.Models
 {
     public class PlayerStats
     {
-
-        
-            public string Id { get; set; }
+           
+           /* [ForeignKey("Player")]*/
+            public int PlayerId { get; set; }
             public string SubIns { get; set; }
             public string Total_PlayTime_min { get; set; }
             public string AveragePlayTime_min { get; set; }

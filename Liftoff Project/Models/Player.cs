@@ -4,6 +4,7 @@ namespace Liftoff_Project.Models
 {
     public class Player
     {
+        public string TeamId { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Weight { get; set; }

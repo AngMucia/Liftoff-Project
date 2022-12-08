@@ -3,7 +3,7 @@
     public class TeamStandings
     {
 
-            public string Team_Id { get; set; }
+            public string TeamId { get; set; }//originally Team_Id
             public string Mp { get; set; } //matches played
             public string W { get; set; } // win
             public string L { get; set; } // losses
