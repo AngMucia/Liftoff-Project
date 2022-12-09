@@ -34,10 +34,47 @@
                         <tr>
                             <td> <img src="@row.Flag" /> </td>
                             <td>@row.Name_en</td>
+                            @if(ViewBag.user != null)
+                            {
+                                <td>
+                                    <form asp-controller="Home" asp-action="AddFavorite" method="post">
+                                        <input type="submit" name="selectedFav" value="@row.Id" placeholder="Like"/>
+                                    </form>
+                                </td>
+                            }
                         </tr>
                     }
 
                 }
        </tbody>
    </table>
+
+  @if (ViewBag.user != null)
+  {
+      <h1>Favorite Teams</h1>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th></th>
+                  <th>Team Name</th>
+              </tr>
+          </thead>
+          <tbody>
+                  @foreach(var row in Model)
+                  {
+                      @for(int i = 0; i < ViewBag.fav.Count; i++)
+                      {
+                        <tr>
+                          @if (row.Id == ViewBag.fav[i].TeamId)
+                          {
+                              <td><img src="@row.Flag" /></td>
+                              <td>@row.Name_en</td>
+                                break;
+                            }
+                        </tr>
+                      }
+                  }
+          </tbody>
+      </table>
+  }
 </div>
