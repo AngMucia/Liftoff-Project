@@ -3,3 +3,91 @@
 *@
 @{
 }
+
+@for (int i =0; i < 4; i++)
+{
+    <div>
+    <div class="round r-of-4">
+        <div class="bracket-game">
+            <div class="player top ">
+                <select @*id="team" name="team"*@>
+                    @*foreach (var team in Model)*@
+                    @*<option value="team.Name_en">*Select Team*</option>*@
+                    <option value="United States">United States</option>
+                </select>
+                @* <div class="score">
+            3
+            </div>*@
+            </div>
+            <div class="player bot ">
+                <select id="teams" name="teams">
+                    <option value="United States">United States</option>
+                </select>
+                @* <div class="score">
+            1
+            </div>*@
+            </div>
+            @**@
+        </div>
+        <div class="bracket-game cont">
+            <div class="player top ">
+                <select id="teams" name="teams">
+                    <option value="United States">United States</option>
+                </select>
+                @* <div class="score">
+            0
+            </div>*@
+            </div>
+            <div class="player bot ">
+                <select id="teams" name="teams">
+                    <option value="United States">United States</option>
+                </select>
+                @*<div class="score">
+            3
+            </div>*@
+            </div>
+        </div>
+    </div>
+    <div class="connectors r-of-2">
+    <div class="top-line"></div>
+    <div class="clear"></div>
+    <div class="bottom-line"></div>
+    <div class="clear"></div>
+    <div class="vert-line"></div>
+    <div class="clear"></div>
+    <div class="next-line"></div>
+    <div class="clear"></div>
+</div>
+<div class="round r-of-2">
+    <div class="bracket-game">
+        <div class="player top ">
+            <select id="teams" name="teams">
+                <option value="United States">United States</option>
+            </select>
+            @* <div class="score">
+            2
+            </div>*@
+        </div>
+        <div class="player bot ">
+            <select id="teams" name="teams">
+                <option value="United States">United States</option>
+            </select>
+            @* <div class="score">
+            3
+            </div>*@
+        </div>
+    </div>
+</div>
+    <div class="connectors r-of-2">
+        <div class="top-line"></div>
+        <div class="clear"></div>
+        <div class="bottom-line"></div>
+        <div class="clear"></div>
+        <div class="vert-line"></div>
+        <div class="clear"></div>
+        <div class="next-line"></div>
+        <div class="clear"></div>
+    </div>
+</div> @*TEST DIV ENDS HERE!!!!!*@
+<div class="clear"></div>
+}
