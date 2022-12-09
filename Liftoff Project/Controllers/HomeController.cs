@@ -23,14 +23,9 @@ namespace Liftoff_Project.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-<<<<<<< HEAD
-       
-        public HomeController(ILogger<HomeController> logger)
-=======
         private ApplicationDbContext context;
 
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext contexDb)
->>>>>>> GetUserInfo
         {
             _logger = logger;
             context = contexDb;
@@ -187,9 +182,6 @@ namespace Liftoff_Project.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-       /* public IActionResult DisplayFavoriteTeam()
-        {
-
-        }*/
+      
     }
 }
