@@ -1,8 +1,8 @@
-﻿using Liftoff_Project.Models;
+﻿using Liftoff_Project.Data;
+using Liftoff_Project.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,13 +10,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Net.Mime;
 using System.Threading.Tasks;
-using static System.Net.WebRequestMethods;
-using static Liftoff_Project.Models.Match;
-using Liftoff_Project.Data;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 namespace Liftoff_Project.Controllers
 {
@@ -63,6 +57,12 @@ namespace Liftoff_Project.Controllers
         [HttpPost]
         public IActionResult SearchTeam(string searchItem)
         {
+            if (User.Identity.Name != null)
+            {
+                user = context.Users.Single(u => u.UserName == User.Identity.Name);
+                favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
+            }
+
             teams = GetTeams();
             List<Team> team = new List<Team>();
                 for (int i = 0; i < teams.Result.Count; i++)
@@ -79,8 +79,10 @@ namespace Liftoff_Project.Controllers
                 {
                     ViewBag.error = "This is not an option";
                 }
-                ViewData.Model = team;
-                return View("Index");
+            ViewBag.user = user;
+            ViewBag.fav = favoriteTeams;
+            ViewData.Model = team;
+            return View("Index");
         }
 
         [HttpPost]
