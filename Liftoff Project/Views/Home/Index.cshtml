@@ -69,6 +69,11 @@
                           {
                               <td><img src="@row.Flag" /></td>
                               <td>@row.Name_en</td>
+                              <td>
+                               <form asp-controller="Home" asp-action="RemoveFavorite" method="post">
+                                        <input type="submit" name="selectedFav" value="@row.Id" alt="image" src="https: //i.ibb.co/CW5Wvry/buttonpng.png" />
+                              </form>
+                              </td>
                                 break;
                             }
                         </tr>
