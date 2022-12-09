@@ -33,49 +33,25 @@ namespace Liftoff_Project.Controllers
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
         private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA1MjUyMTAsImV4cCI6MTY3MDYxMTYxMH0.0tOETN-phnQ3-deOEXzJq80AS3inrEO6hlHqb12UJK8";
 
-        IList<Team> teams = new List<Team>();
+        Task<IList<Team>> teams;
         IList<Team> favTeams = new List<Team>();
         IList<FavoriteTeams> favoriteTeams;
         IdentityUser user;
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
+            Task<IList<Team>> t;
             if (User.Identity.Name != null)
             {
                 user = context.Users.Single(u => u.UserName == User.Identity.Name);
                 favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
             }
 
-            //IList<Team>teams = new List<Team>();
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + bearerToken);
-                HttpResponseMessage getData = await client.GetAsync("team");
-               
-                if (getData.IsSuccessStatusCode)
-                {
-                    string results = getData.Content.ReadAsStringAsync().Result;
-                    //Console.WriteLine(results);
-                    RootObject data = JsonConvert.DeserializeObject<RootObject>(results);
-                    teams = data.Data;
-
-                }
-                else
-                {
-                    
-                    Console.WriteLine(getData.StatusCode);
-                }
+            teams = GetTeams();
 
                 ViewBag.user = user;
                 ViewBag.fav = favoriteTeams;
-                ViewData.Model = teams;
-                
-                   
-            }
-            
+                ViewData.Model = teams.Result;
             return View();
         }
 
@@ -85,36 +61,15 @@ namespace Liftoff_Project.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SearchTeam(string searchItem)
+        public IActionResult SearchTeam(string searchItem)
         {
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + bearerToken);
-                HttpResponseMessage getData = await client.GetAsync("team");
-
-                if (getData.IsSuccessStatusCode)
+            teams = GetTeams();
+            List<Team> team = new List<Team>();
+                for (int i = 0; i < teams.Result.Count; i++)
                 {
-                    string results = getData.Content.ReadAsStringAsync().Result;
-                    Console.WriteLine(results);
-                    RootObject data = JsonConvert.DeserializeObject<RootObject>(results);
-                    teams = data.Data;
-
-                }
-                else
-                {
-
-                    Console.WriteLine(getData.StatusCode);
-                }
-
-                List<Team> team = new List<Team>();
-                for (int i = 0; i < teams.Count; i++)
-                {
-                    if (searchItem.Equals(teams[i].Name_en))
+                    if (searchItem.Equals(teams.Result[i].Name_en))
                     {
-                        team.Add(teams[i]);
+                        team.Add(teams.Result[i]);
                         break;
                     }
                    
@@ -126,16 +81,66 @@ namespace Liftoff_Project.Controllers
                 }
                 ViewData.Model = team;
                 return View("Index");
-            }
-
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddFavorite(string selectedFav)
+        public IActionResult AddFavorite(string selectedFav)
         {
 
             user = context.Users.Single(u => u.UserName == User.Identity.Name);
             favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
+
+            FavoriteTeams addTeam = new FavoriteTeams();
+                addTeam.TeamId = selectedFav;
+                addTeam.UserId = user.Id;
+
+                try
+                {
+                    context.FavoriteTeams.Add(addTeam);
+                    context.SaveChanges();
+                    favoriteTeams.Add(addTeam);
+                }
+                catch (Exception) { }
+
+            teams = GetTeams();
+                ViewBag.user = user;
+                ViewBag.fav = favoriteTeams;
+                ViewData.Model = teams.Result;
+                return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult RemoveFavorite(string selectedFav)
+        {
+            user = context.Users.Single(u => u.UserName == User.Identity.Name);
+            favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
+            teams = GetTeams();
+
+            for(int i = 0; i < favoriteTeams.Count; i++)
+            {
+                if(favoriteTeams[i].TeamId == selectedFav)
+                {
+                    context.FavoriteTeams.Remove(favoriteTeams[i]);
+                    favoriteTeams.RemoveAt(i);
+                }
+            }
+            context.SaveChanges();
+
+            ViewBag.user = user;
+            ViewBag.fav = favoriteTeams;
+            ViewData.Model = teams.Result;
+            return View("Index");
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public async Task<IList<Team>> GetTeams()
+        {
+            IList<Team> temp = new List<Team>();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseUrl);
@@ -149,7 +154,7 @@ namespace Liftoff_Project.Controllers
                     string results = getData.Content.ReadAsStringAsync().Result;
                     //Console.WriteLine(results);
                     RootObject data = JsonConvert.DeserializeObject<RootObject>(results);
-                    teams = data.Data;
+                    temp = data.Data;
 
                 }
                 else
@@ -157,30 +162,9 @@ namespace Liftoff_Project.Controllers
 
                     Console.WriteLine(getData.StatusCode);
                 }
-
-                FavoriteTeams addTeam = new FavoriteTeams();
-                addTeam.TeamId = selectedFav;
-                addTeam.UserId = user.Id;
-
-                if (favoriteTeams.Contains(addTeam) == false)
-                {
-                    context.FavoriteTeams.Add(addTeam);
-                    context.SaveChanges();
-                    favoriteTeams.Add(addTeam);
-                }
-
-                ViewBag.user = user;
-                ViewBag.fav = favoriteTeams;
-                ViewData.Model = teams;
             }
 
-                return View("Index");
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return temp;
         }
       
     }
