@@ -38,7 +38,9 @@
                             {
                                 <td>
                                     <form asp-controller="Home" asp-action="AddFavorite" method="post">
-                                        <input type="submit" name="selectedFav" value="@row.Id" placeholder="Like"/>
+                                        <button class="btn-success" type="submit" name="selectedFav" value="@row.Id">
+                                        <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50"/>
+                                        </button>
                                     </form>
                                 </td>
                             }
@@ -71,7 +73,9 @@
                               <td>@row.Name_en</td>
                               <td>
                                <form asp-controller="Home" asp-action="RemoveFavorite" method="post">
-                                        <input type="submit" name="selectedFav" value="@row.Id" alt="image" src="https: //i.ibb.co/CW5Wvry/buttonpng.png" />
+                                        <button type="submit" name="selectedFav" value="@row.Id" class="btn-info">
+                                            <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50" />
+                                        </button>
                               </form>
                               </td>
                                 break;
