@@ -31,7 +31,7 @@ namespace Liftoff_Project.Data
             modelBuilder.Entity<FavoriteTeams>()
                 .ToTable("Favorite_Teams").HasKey(f => new { f.UserId, f.TeamId });
             modelBuilder.Entity<TeamStats>()
-                .ToTable("TeamStats").HasKey(ts => new {ts.TeamId})
+                .ToTable("TeamStats").HasKey(ts => new { ts.TeamId });
             base.OnModelCreating(modelBuilder);
         }
     }
