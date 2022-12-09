@@ -14,76 +14,80 @@
         
 
     </form>
-    
-    <table class="table table-striped">
-       <thead>
-           <tr>
-                <th>
+
+        <div class="@ViewBag.pos">
+            <h1>World Cup Teams</h1>
+            <table class="table table-dark table-striped">
+               <thead>
+                   <tr>
+                        <th>
                   
-               </th>
-                <th>
-                   Team Name
-               </th>
-           </tr>
-       </thead>
-       <tbody>
-                @foreach (var row in Model)
-                {
-                    @if (row.Name_en != "--")
-                    {
-                        <tr>
-                            <td> <img src="@row.Flag" /> </td>
-                            <td>@row.Name_en</td>
-                            @if(ViewBag.user != null)
+                       </th>
+                        <th>
+                           Team Name
+                       </th>
+                   </tr>
+               </thead>
+               <tbody>
+                        @foreach (var row in Model)
+                        {
+                            @if (row.Name_en != "--")
                             {
-                                <td>
-                                    <form asp-controller="Home" asp-action="AddFavorite" method="post">
-                                        <button class="btn-success" type="submit" name="selectedFav" value="@row.Id">
-                                        <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50"/>
-                                        </button>
-                                    </form>
-                                </td>
+                                <tr>
+                                    <td> <img src="@row.Flag" /> </td>
+                                    <td>@row.Name_en</td>
+                                    @if(ViewBag.user != null)
+                                    {
+                                        <td>
+                                            <form asp-controller="Home" asp-action="AddFavorite" method="post">
+                                                <button class="btn-success" type="submit" name="selectedFav" value="@row.Id">
+                                                <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50"/>
+                                                </button>
+                                            </form>
+                                        </td>
+                                    }
+                                </tr>
                             }
-                        </tr>
-                    }
 
-                }
-       </tbody>
-   </table>
-
-  @if (ViewBag.user != null)
-  {
-      <h1>Favorite Teams</h1>
-      <table class="table">
-          <thead>
-              <tr>
-                  <th></th>
-                  <th>Team Name</th>
-              </tr>
-          </thead>
-          <tbody>
-                  @foreach(var row in Model)
-                  {
-                      @for(int i = 0; i < ViewBag.fav.Count; i++)
+                        }
+               </tbody>
+           </table>
+       </div>
+   <div class="float-right">
+      @if (ViewBag.user != null)
+      {
+          <h1>Favorite Teams</h1>
+            <table class="table table-dark table-striped">
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th>Team Name</th>
+                  </tr>
+              </thead>
+              <tbody>
+                      @foreach(var row in Model)
                       {
-                        <tr>
-                          @if (row.Id == ViewBag.fav[i].TeamId)
+                          @for(int i = 0; i < ViewBag.fav.Count; i++)
                           {
-                              <td><img src="@row.Flag" /></td>
-                              <td>@row.Name_en</td>
-                              <td>
-                               <form asp-controller="Home" asp-action="RemoveFavorite" method="post">
-                                        <button type="submit" name="selectedFav" value="@row.Id" class="btn-info">
-                                            <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50" />
-                                        </button>
-                              </form>
-                              </td>
-                                break;
-                            }
-                        </tr>
+                            <tr>
+                              @if (row.Id == ViewBag.fav[i].TeamId)
+                              {
+                                  <td><img src="@row.Flag" /></td>
+                                  <td>@row.Name_en</td>
+                                  <td>
+                                   <form asp-controller="Home" asp-action="RemoveFavorite" method="post">
+                                            <button type="submit" name="selectedFav" value="@row.Id" class="btn-danger">
+                                                <img src="https://www.psd-dude.com/tutorials/resources-images/star-symbol/star-clipart.png" width="50" height="50" />
+                                            </button>
+                                  </form>
+                                  </td>
+                                    break;
+                                }
+                            </tr>
+                          }
                       }
-                  }
-          </tbody>
-      </table>
-  }
+              </tbody>
+          </table>
+      }
+  </div>
 </div>

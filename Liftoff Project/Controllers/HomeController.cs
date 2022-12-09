@@ -34,11 +34,13 @@ namespace Liftoff_Project.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.pos = "";
             Task<IList<Team>> t;
             if (User.Identity.Name != null)
             {
                 user = context.Users.Single(u => u.UserName == User.Identity.Name);
                 favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
+                ViewBag.pos = "float-left";
             }
 
             teams = GetTeams();
@@ -57,10 +59,12 @@ namespace Liftoff_Project.Controllers
         [HttpPost]
         public IActionResult SearchTeam(string searchItem)
         {
+            ViewBag.pos = "";
             if (User.Identity.Name != null)
             {
                 user = context.Users.Single(u => u.UserName == User.Identity.Name);
                 favoriteTeams = context.FavoriteTeams.Where(ft => ft.UserId == user.Id).ToList();
+                ViewBag.pos = "float-left";
             }
 
             teams = GetTeams();
@@ -105,10 +109,11 @@ namespace Liftoff_Project.Controllers
                 catch (Exception) { }
 
             teams = GetTeams();
-                ViewBag.user = user;
-                ViewBag.fav = favoriteTeams;
-                ViewData.Model = teams.Result;
-                return View("Index");
+            ViewBag.pos = "float-left";
+            ViewBag.user = user;
+            ViewBag.fav = favoriteTeams;
+            ViewData.Model = teams.Result;
+            return View("Index");
         }
 
         [HttpPost]
@@ -128,6 +133,7 @@ namespace Liftoff_Project.Controllers
             }
             context.SaveChanges();
 
+            ViewBag.pos = "float-left";
             ViewBag.user = user;
             ViewBag.fav = favoriteTeams;
             ViewData.Model = teams.Result;
