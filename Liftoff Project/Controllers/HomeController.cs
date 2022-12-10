@@ -164,6 +164,12 @@ namespace Liftoff_Project.Controllers
                     RootObject data = JsonConvert.DeserializeObject<RootObject>(results);
                     temp = data.Data;
 
+                    foreach(var team in temp)
+                    {
+                        context.Teams.Add(team);
+                    }
+                    context.SaveChanges();
+
                 }
                 else
                 {

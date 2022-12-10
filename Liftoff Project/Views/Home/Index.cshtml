@@ -35,7 +35,7 @@
                             {
                                 <tr>
                                     <td> <img src="@row.Flag" /> </td>
-                                    <td>@row.Name_en</td>
+                                    <td><a asp-controller="TeamStats" asp-action="Index">@row.Name_en</a></td>
                                     @if(ViewBag.user != null)
                                     {
                                         <td>

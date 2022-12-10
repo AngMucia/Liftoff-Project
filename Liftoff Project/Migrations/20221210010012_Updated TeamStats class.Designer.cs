@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Liftoff_Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221208233134_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20221210010012_Updated TeamStats class")]
+    partial class UpdatedTeamStatsclass
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -204,7 +204,11 @@ namespace Liftoff_Project.Migrations
                     b.Property<string>("TacklePct")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Team")
+                    b.Property<string>("TeamId1")
+                        .IsRequired()
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TeamName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Time_US_Eastern")
@@ -239,6 +243,8 @@ namespace Liftoff_Project.Migrations
 
                     b.HasKey("TeamId");
 
+                    b.HasIndex("TeamId1");
+
                     b.ToTable("TeamStats");
                 });
 
@@ -247,6 +253,9 @@ namespace Liftoff_Project.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<string>("TeamId")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("UserName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -478,6 +487,15 @@ namespace Liftoff_Project.Migrations
                     b.HasOne("Liftoff_Project.Models.Team", "Team")
                         .WithMany()
                         .HasForeignKey("TeamId1");
+                });
+
+            modelBuilder.Entity("Liftoff_Project.Models.TeamStats", b =>
+                {
+                    b.HasOne("Liftoff_Project.Models.Team", "Team")
+                        .WithMany()
+                        .HasForeignKey("TeamId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

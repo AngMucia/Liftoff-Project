@@ -22,20 +22,12 @@ namespace Liftoff_Project.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
-                    b.Property<int>("TeamId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TeamId1")
+                    b.Property<string>("TeamId")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
-
-                    b.Property<int?>("UserId1")
-                        .HasColumnType("int");
 
                     b.HasKey("UserId", "TeamId");
 
-                    b.HasIndex("TeamId1");
-
-                    b.HasIndex("UserId1");
+                    b.HasIndex("TeamId");
 
                     b.ToTable("Favorite_Teams");
                 });
@@ -65,6 +57,9 @@ namespace Liftoff_Project.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Team")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TeamId")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Weight")
@@ -124,11 +119,141 @@ namespace Liftoff_Project.Migrations
                     b.ToTable("Team_Player");
                 });
 
+            modelBuilder.Entity("Liftoff_Project.Models.TeamStats", b =>
+                {
+                    b.Property<string>("TeamId")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<string>("AccurateCrosses")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("AccurateLongBalls")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("AccuratePasses")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Away_Goal")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Away_Team")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("BlockedShots")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("CrossPct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Date_US_Eastern")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("EffectiveClearance")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("EffectiveTackles")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Fixture")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("FoulsCommitted")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Home_Goal")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Home_Team")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Interceptions")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("LongballPct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Offsides")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("PassPct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("PenaltyKickGoals")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("PenaltyKickShots")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("PossessionPct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("RedCards")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Saves")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("ShotPct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("ShotsOnTarget")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TacklePct")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TeamId1")
+                        .IsRequired()
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TeamName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Time_US_Eastern")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalClearance")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalCrosses")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalLongBalls")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalPasses")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalShots")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("TotalTackles")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("UpdateTime")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("WonCorners")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("YellowCards")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("TeamId");
+
+                    b.HasIndex("TeamId1");
+
+                    b.ToTable("TeamStats");
+                });
+
             modelBuilder.Entity("Liftoff_Project.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<string>("TeamId")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("UserName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -338,11 +463,15 @@ namespace Liftoff_Project.Migrations
                 {
                     b.HasOne("Liftoff_Project.Models.Team", "Team")
                         .WithMany()
-                        .HasForeignKey("TeamId1");
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Liftoff_Project.Models.User", "User")
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Liftoff_Project.Models.TeamPlayer", b =>
@@ -356,6 +485,15 @@ namespace Liftoff_Project.Migrations
                     b.HasOne("Liftoff_Project.Models.Team", "Team")
                         .WithMany()
                         .HasForeignKey("TeamId1");
+                });
+
+            modelBuilder.Entity("Liftoff_Project.Models.TeamStats", b =>
+                {
+                    b.HasOne("Liftoff_Project.Models.Team", "Team")
+                        .WithMany()
+                        .HasForeignKey("TeamId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
