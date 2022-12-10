@@ -78,11 +78,12 @@ body {
     }
 
     .round.r-of-2 {
-        margin-top: 25px;
+        margin-top: 35px; /*originally 25*/
+        margin-left: 30px;
     }
 
 .bracket-game {
-    max-width: 125px;
+    max-width: 1000px;
     margin: 10px 0;
 }
 
@@ -109,13 +110,13 @@ body {
         background: #EEE;
     }
 
-    .player.win {
+    /*.player.win {
         background-color: #B8F2B8;
     }
 
     .player.loss {
         background-color: #F2B8B8;
-    }
+    }*/
 
 .connectors {
     float: left;
@@ -156,3 +157,18 @@ body {
     clear: both;
 }
 /*End of bracket layout*/
+/*My Bracket Layout*/
+.round.semi-finals{
+    margin-top: 40px;
+}
+.round.finals{
+    margin-top: 100px;
+    margin-right: 180px;
+}
+.round.winner{
+    margin-top: -12px;
+    margin-left: -150px;
+}
+.mySubmit{
+    float: right;
+}
