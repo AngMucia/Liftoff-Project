@@ -9,7 +9,6 @@
             <div class="round r-of-4">
                 <div class="bracket-game">
                     <div class="player top ">
-
                         <select @*id="team" name="team"*@>
                             @foreach (var team in ViewBag.Teams)
                             {
@@ -25,8 +24,14 @@
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <select id="teams" name="teams">
-                            <option value="Colombia">Colombia</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                         @* <div class="score">
                     1
@@ -36,16 +41,28 @@
                 </div>
                 <div class="bracket-game cont">
                     <div class="player top ">
-                        <select id="teams" name="teams">
-                            <option value="Croatia">Croatia</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                         @* <div class="score">
                     0
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <select id="teams" name="teams">
-                            <option value="United States">United States</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                         @*<div class="score">
                     3
@@ -66,16 +83,28 @@
             <div class="round r-of-2">
                 <div class="bracket-game">
                     <div class="player top ">
-                        <select id="teams" name="teams">
-                            <option value="India">India</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                         @* <div class="score">
                     2
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <select id="teams" name="teams">
-                            <option value="Chile">Chile</option>
+                       <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                         @* <div class="score">
                     3
@@ -97,9 +126,15 @@
         <div class="round semi-finals">
             <div class="bracket-game">
                 <div class="player top">
-                    <select id="teams" name="teams">
-                        <option value="United Kingdom">United Kingdom</option>
-                    </select>
+                   <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
+                        </select>
                 </div>
             </div>
         </div>
@@ -108,8 +143,14 @@
             <div class="round finals">
                 <div class="bracket-game">
                     <div class="player top">
-                        <select id="teams" name="teams">
-                            <option value="Argentina">Argentina</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                     </div>
                 </div>
@@ -118,8 +159,14 @@
             {
                 <div class="round winner">
                     <div class="bracket-game">
-                        <select value="teams" name="teams">
-                            <option value="Zhang Xina">Zhang Xina</option>
+                        <select @*id="team" name="team"*@>
+                            @foreach (var team in ViewBag.Teams)
+                            {
+                                @if (team.Name_en != "--")
+                                {
+                                    <option value="@team.Name_en">@team.Name_en</option>
+                                }
+                            }
                         </select>
                     </div>
                 </div>

@@ -72,8 +72,10 @@ namespace Liftoff_Project.Controllers
             List<Team> allTeams = new List<Team>();
             for (int i = 0; i < teams.Result.Count; i++)
             {
+                allTeams.Add(teams.Result[i]);
 
             }
+            ViewBag.Teams = allTeams;
             return View();
         }
 
