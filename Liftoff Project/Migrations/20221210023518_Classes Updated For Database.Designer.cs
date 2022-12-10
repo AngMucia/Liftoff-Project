@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Liftoff_Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221210010012_Updated TeamStats class")]
-    partial class UpdatedTeamStatsclass
+    [Migration("20221210023518_Classes Updated For Database")]
+    partial class ClassesUpdatedForDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -108,24 +108,18 @@ namespace Liftoff_Project.Migrations
                     b.Property<int>("PlayerId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TeamId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TeamId1")
+                    b.Property<string>("TeamId")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.HasKey("PlayerId", "TeamId");
 
-                    b.HasIndex("TeamId1");
+                    b.HasIndex("TeamId");
 
                     b.ToTable("Team_Player");
                 });
 
             modelBuilder.Entity("Liftoff_Project.Models.TeamStats", b =>
                 {
-                    b.Property<string>("TeamId")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
-
                     b.Property<string>("AccurateCrosses")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -204,10 +198,6 @@ namespace Liftoff_Project.Migrations
                     b.Property<string>("TacklePct")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("TeamId1")
-                        .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
-
                     b.Property<string>("TeamName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -241,28 +231,7 @@ namespace Liftoff_Project.Migrations
                     b.Property<string>("YellowCards")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.HasKey("TeamId");
-
-                    b.HasIndex("TeamId1");
-
                     b.ToTable("TeamStats");
-                });
-
-            modelBuilder.Entity("Liftoff_Project.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("TeamId")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -486,14 +455,7 @@ namespace Liftoff_Project.Migrations
 
                     b.HasOne("Liftoff_Project.Models.Team", "Team")
                         .WithMany()
-                        .HasForeignKey("TeamId1");
-                });
-
-            modelBuilder.Entity("Liftoff_Project.Models.TeamStats", b =>
-                {
-                    b.HasOne("Liftoff_Project.Models.Team", "Team")
-                        .WithMany()
-                        .HasForeignKey("TeamId1")
+                        .HasForeignKey("TeamId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

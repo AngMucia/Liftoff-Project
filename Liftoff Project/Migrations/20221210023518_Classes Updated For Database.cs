@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Liftoff_Project.Migrations
 {
-    public partial class UpdatedTeamStatsclass : Migration
+    public partial class ClassesUpdatedForDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -87,17 +87,49 @@ namespace Liftoff_Project.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "TeamStats",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    TeamId = table.Column<string>(nullable: true),
-                    UserName = table.Column<string>(nullable: true)
+                    TeamName = table.Column<string>(nullable: true),
+                    Date_US_Eastern = table.Column<string>(nullable: true),
+                    Time_US_Eastern = table.Column<string>(nullable: true),
+                    Fixture = table.Column<string>(nullable: true),
+                    Home_Team = table.Column<string>(nullable: true),
+                    Home_Goal = table.Column<string>(nullable: true),
+                    Away_Goal = table.Column<string>(nullable: true),
+                    Away_Team = table.Column<string>(nullable: true),
+                    FoulsCommitted = table.Column<string>(nullable: true),
+                    YellowCards = table.Column<string>(nullable: true),
+                    RedCards = table.Column<string>(nullable: true),
+                    Offsides = table.Column<string>(nullable: true),
+                    WonCorners = table.Column<string>(nullable: true),
+                    Saves = table.Column<string>(nullable: true),
+                    PossessionPct = table.Column<string>(nullable: true),
+                    TotalShots = table.Column<string>(nullable: true),
+                    ShotsOnTarget = table.Column<string>(nullable: true),
+                    ShotPct = table.Column<string>(nullable: true),
+                    PenaltyKickGoals = table.Column<string>(nullable: true),
+                    PenaltyKickShots = table.Column<string>(nullable: true),
+                    AccuratePasses = table.Column<string>(nullable: true),
+                    TotalPasses = table.Column<string>(nullable: true),
+                    PassPct = table.Column<string>(nullable: true),
+                    AccurateCrosses = table.Column<string>(nullable: true),
+                    TotalCrosses = table.Column<string>(nullable: true),
+                    CrossPct = table.Column<string>(nullable: true),
+                    TotalLongBalls = table.Column<string>(nullable: true),
+                    AccurateLongBalls = table.Column<string>(nullable: true),
+                    LongballPct = table.Column<string>(nullable: true),
+                    BlockedShots = table.Column<string>(nullable: true),
+                    EffectiveTackles = table.Column<string>(nullable: true),
+                    TotalTackles = table.Column<string>(nullable: true),
+                    TacklePct = table.Column<string>(nullable: true),
+                    Interceptions = table.Column<string>(nullable: true),
+                    EffectiveClearance = table.Column<string>(nullable: true),
+                    TotalClearance = table.Column<string>(nullable: true),
+                    UpdateTime = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -235,8 +267,7 @@ namespace Liftoff_Project.Migrations
                 columns: table => new
                 {
                     PlayerId = table.Column<int>(nullable: false),
-                    TeamId = table.Column<int>(nullable: false),
-                    TeamId1 = table.Column<string>(nullable: true)
+                    TeamId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -248,63 +279,8 @@ namespace Liftoff_Project.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Team_Player_Teams_TeamId1",
-                        column: x => x.TeamId1,
-                        principalTable: "Teams",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "TeamStats",
-                columns: table => new
-                {
-                    TeamId = table.Column<string>(nullable: false),
-                    TeamId1 = table.Column<string>(nullable: false),
-                    TeamName = table.Column<string>(nullable: true),
-                    Date_US_Eastern = table.Column<string>(nullable: true),
-                    Time_US_Eastern = table.Column<string>(nullable: true),
-                    Fixture = table.Column<string>(nullable: true),
-                    Home_Team = table.Column<string>(nullable: true),
-                    Home_Goal = table.Column<string>(nullable: true),
-                    Away_Goal = table.Column<string>(nullable: true),
-                    Away_Team = table.Column<string>(nullable: true),
-                    FoulsCommitted = table.Column<string>(nullable: true),
-                    YellowCards = table.Column<string>(nullable: true),
-                    RedCards = table.Column<string>(nullable: true),
-                    Offsides = table.Column<string>(nullable: true),
-                    WonCorners = table.Column<string>(nullable: true),
-                    Saves = table.Column<string>(nullable: true),
-                    PossessionPct = table.Column<string>(nullable: true),
-                    TotalShots = table.Column<string>(nullable: true),
-                    ShotsOnTarget = table.Column<string>(nullable: true),
-                    ShotPct = table.Column<string>(nullable: true),
-                    PenaltyKickGoals = table.Column<string>(nullable: true),
-                    PenaltyKickShots = table.Column<string>(nullable: true),
-                    AccuratePasses = table.Column<string>(nullable: true),
-                    TotalPasses = table.Column<string>(nullable: true),
-                    PassPct = table.Column<string>(nullable: true),
-                    AccurateCrosses = table.Column<string>(nullable: true),
-                    TotalCrosses = table.Column<string>(nullable: true),
-                    CrossPct = table.Column<string>(nullable: true),
-                    TotalLongBalls = table.Column<string>(nullable: true),
-                    AccurateLongBalls = table.Column<string>(nullable: true),
-                    LongballPct = table.Column<string>(nullable: true),
-                    BlockedShots = table.Column<string>(nullable: true),
-                    EffectiveTackles = table.Column<string>(nullable: true),
-                    TotalTackles = table.Column<string>(nullable: true),
-                    TacklePct = table.Column<string>(nullable: true),
-                    Interceptions = table.Column<string>(nullable: true),
-                    EffectiveClearance = table.Column<string>(nullable: true),
-                    TotalClearance = table.Column<string>(nullable: true),
-                    UpdateTime = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TeamStats", x => x.TeamId);
-                    table.ForeignKey(
-                        name: "FK_TeamStats_Teams_TeamId1",
-                        column: x => x.TeamId1,
+                        name: "FK_Team_Player_Teams_TeamId",
+                        column: x => x.TeamId,
                         principalTable: "Teams",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -353,14 +329,9 @@ namespace Liftoff_Project.Migrations
                 column: "TeamId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Team_Player_TeamId1",
+                name: "IX_Team_Player_TeamId",
                 table: "Team_Player",
-                column: "TeamId1");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TeamStats_TeamId1",
-                table: "TeamStats",
-                column: "TeamId1");
+                column: "TeamId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -388,9 +359,6 @@ namespace Liftoff_Project.Migrations
 
             migrationBuilder.DropTable(
                 name: "TeamStats");
-
-            migrationBuilder.DropTable(
-                name: "User");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

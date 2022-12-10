@@ -4,8 +4,6 @@ namespace Liftoff_Project.Models
 {
     public class TeamStats
     {
-        public Team Team { get; set; }
-        public string TeamId { get; set; }
         public string TeamName { get; set; }
         public string Date_US_Eastern { get; set; }
         public string Time_US_Eastern { get; set; }

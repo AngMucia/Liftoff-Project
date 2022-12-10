@@ -14,6 +14,7 @@ namespace Liftoff_Project.Data
         public DbSet<TeamPlayer> TeamPlayers { get; set; }
         public DbSet<FavoriteTeams> FavoriteTeams { get; set; }
         public DbSet<TeamStats> TeamStats { get; set; }
+        public DbSet<PlayerStats> PlayerStats { get; set; }
 
 
 
@@ -29,11 +30,13 @@ namespace Liftoff_Project.Data
                 .ToTable("Team_Player").HasKey(tp => new { tp.PlayerId, tp.TeamId });
             modelBuilder.Entity<FavoriteTeams>()
                 .ToTable("Favorite_Teams").HasKey(f => new { f.UserId, f.TeamId });
-            modelBuilder.Entity<TeamStats>()
-                .ToTable("TeamStats").HasKey(ts => new { ts.TeamId });
-            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Player>()
-                .ToTable("Players").HasKey(p => new { p.TeamId });
+                .ToTable("Players").HasKey(p => new { p.Id });
+            modelBuilder.Entity<TeamStats>()
+                .ToTable("TeamStats").HasNoKey();
+            modelBuilder.Entity<PlayerStats>()
+                .ToTable("PlayerStats").HasKey(ps => new {ps.PlayerId});
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

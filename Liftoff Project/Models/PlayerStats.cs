@@ -7,7 +7,7 @@ namespace Liftoff_Project.Models
     public class PlayerStats
     {
            
-           /* [ForeignKey("Player")]*/
+            [ForeignKey("PlayerId")]
             public int PlayerId { get; set; }
             public string SubIns { get; set; }
             public string Total_PlayTime_min { get; set; }
