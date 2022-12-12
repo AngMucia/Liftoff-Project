@@ -7,6 +7,8 @@ namespace Liftoff_Project.Models
         public List<Team> Teams { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }  
-        public int UserId { get; set; }
+        public string UserId { get; set; }
+        public  Dictionary<string, string[]>BracketTeams { get; set; }
+        
     }
 }
