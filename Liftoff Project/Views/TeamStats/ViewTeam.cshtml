@@ -81,7 +81,9 @@
             @foreach (var player in ViewBag.players)
             {
                 <tr>
-                    <td>@player.Name</td>
+                    <td>
+                        <a asp-controller="TeamStats" asp-action="ViewPlayer" asp-route-playerId="@player.Id">@player.Name</a>
+                    </td>
                     <td>@player.Jersey</td>
                     <td>@player.Position</td>
                 </tr>

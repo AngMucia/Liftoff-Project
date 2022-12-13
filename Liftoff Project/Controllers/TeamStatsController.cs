@@ -59,6 +59,14 @@ namespace Liftoff_Project.Controllers
             return View();
         }
 
+        public IActionResult ViewPlayer(int playerId)
+        {
+            ViewBag.team = context.Teams.Single(t => t.Name_en == context.Players.Single(p => p.Id == playerId).Team);
+            ViewBag.stats = context.PlayerStats.Single(ps => ps.PlayerId == playerId);
+            ViewData.Model = context.Players.Single(p => p.Id == playerId);
+            return View();
+        }
+
         public async Task<IList<Team>> GetTeams()
         {
             IList<Team> temp = new List<Team>();
