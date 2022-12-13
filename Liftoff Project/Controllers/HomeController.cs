@@ -25,7 +25,7 @@ namespace Liftoff_Project.Controllers
             context = contexDb;
         }
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA4NjUyNDcsImV4cCI6MTY3MDk1MTY0N30.e1hd3hfd1Zlad0lCj_cHY5z5Vl9hjB7kmU5IQaG_doc";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
 
         Task<IList<Team>> teams;
         IList<Team> favTeams = new List<Team>();

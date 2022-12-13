@@ -2,21 +2,11 @@
 @model Liftoff_Project.Controllers.BracketController
 
 
+<h1>Create A Bracket!</h1>
 
 <form id="myform" asp-controller="Bracket" asp-action="CreateBracket" method="post">
-    <script type="text/javascript" language="JavaScript" runat="server">
-        function compareOptionTag() {
-            let team1 = document.getElementById("team1");
-            let team2 = document.getElementsById("team2");
-            let frm = document.forms["myfrom"];
-            if (team1 === team2) {
-                //erro message maybe
-               frmvalidator.addValidation("Teams", "req", "Please do not match team")
-            }
+   
 
-        }
-
-    </script>
     @for (int i = 0; i < 4; i++)
                {
 
@@ -209,5 +199,34 @@
         @*Winner dropmenu starts here*@
         }
 
-    <button class="mySubmit" type="submit" onclick="compareOptionTag()">Click on me!</button>
+    <button id="mySubmit" class="mySubmit" type="submit">Click on me!</button>
+    <script type="text/javascript" language="JavaScript" runat="server">
+
+                let button = document.getElementById("mySubmit");
+        console.log("Can you read this?")
+
+        button.addEventListener("submit", function (event) {
+            console.log("Event listener fired");
+            let team1 = document.getElementById("team1");
+            let team2 = document.getElementsById("team2");
+            let frm = document.forms["myform"];
+            if (team1 === team2) {
+                //erro message maybe
+                console.log("conditional listener fired")
+                event.preventDefault();
+            }
+        }
+
+                //function compareOptionTag() {
+                //    let team1 = document.getElementById("team1");
+                //    let team2 = document.getElementsById("team2");
+                //    let frm = document.forms["myfrom"];
+                //    if (team1 === team2) {
+                //        erro message maybe
+                //       event.preventDefault()
+                //    }
+
+                //}
+
+    </script>
 </form>

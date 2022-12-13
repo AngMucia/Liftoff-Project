@@ -23,7 +23,7 @@ namespace Liftoff_Project.Controllers
             context = dbContext;
         }
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA4NjUyNDcsImV4cCI6MTY3MDk1MTY0N30.e1hd3hfd1Zlad0lCj_cHY5z5Vl9hjB7kmU5IQaG_doc";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
         Task<IList<Team>> teams;
         public async Task<IList<Team>> GetTeams()
         {
@@ -75,36 +75,47 @@ namespace Liftoff_Project.Controllers
             List<Team> Team = context.Teams.ToList();
             ViewBag.Teams = Team;
             Bracket myBracket = new Bracket();
+            
             IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
             myBracket.UserId = user.Id;
             myBracket.BracketTeams = string.Join(',', team1) + " " + string.Join(",", team2) + " " + string.Join(",", team3) + "  " +  string.Join(",", team4) + "  " + string.Join(",", team5) + " " + string.Join(",", team6) + " " + string.Join(",", team7) + "  " + string.Join(",", team8) + "  " + string.Join(",", team9);
-            /*if (!ModelState.IsValid)
-            {
-                return Redirect("CreateBracket"); 
-            }*/
-            
-            
+            context.Brackets.Add(myBracket);
+            context.SaveChanges();
+            List<string[]> myBrackets1 = new List<string[]>();
+            myBrackets1.Add(team1);
+            myBrackets1.Add(team2);
+            myBrackets1.Add(team3);
+            myBrackets1.Add(team4);
+            myBrackets1.Add(team5);
+            myBrackets1.Add(team6);
+            myBrackets1.Add(team7);
+            myBrackets1.Add(team8);
+            myBrackets1.Add(team9);
+            Console.WriteLine(myBracket.BracketTeams);
+            ViewBag.MyBrackets1 = myBrackets1;
             return View("ViewBracket");
         }
 
         [HttpGet]
         public IActionResult CompareBracket(/*AddBracketViewModel addBracketViewModel*/)
         {
-            /*if (ModelState.IsValid)
-            {
-                Bracket myBracket = new Bracket
-                {
-                    Id = addBracketViewModel.BracketId
-                };
-                context.Brackets.Add(myBracket);
-                context.SaveChanges();
-
-            }*/
+           //grab bracket Id so it can pull up the bracket made
+           
             return View();
         }
         
         public IActionResult ViewBracket()
         {
+            //grab bracket Id so we can grab its data from the bracket created
+            
+            IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+            List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
+            
+            
+           
+           
+           
+
             return View();
         }
     }
