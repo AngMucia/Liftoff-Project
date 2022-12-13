@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Liftoff_Project.Models
 {
@@ -42,5 +43,38 @@ namespace Liftoff_Project.Models
             public string TotalClearance { get; set; }
             public string UpdateTime { get; set; }
 
+        public TeamStats() { }
+        public TeamStats(string value)
+        {
+            Home_Goal = value;
+            FoulsCommitted = value;
+            YellowCards = value;
+            RedCards = value;
+            Offsides = value;
+            WonCorners = value;
+            Saves = value;
+            TotalShots = value;
+            PenaltyKickGoals = value;
+            PenaltyKickShots = value;
+            TotalPasses = value;
+        }
+
+        public void SumAll(List<TeamStats> stats)
+        {
+            foreach(var statsItem in stats)
+            {
+                this.Home_Goal = "" + (int.Parse(this.Home_Goal) + int.Parse(statsItem.Home_Goal));
+                this.FoulsCommitted = "" + (int.Parse(this.FoulsCommitted) + int.Parse(statsItem.FoulsCommitted));
+                this.YellowCards = "" + (int.Parse(this.YellowCards) + int.Parse(statsItem.YellowCards));
+                this.RedCards = "" + (int.Parse(this.RedCards) + int.Parse(statsItem.RedCards));
+                this.Offsides = "" + (int.Parse(this.Offsides) + int.Parse(statsItem.Offsides));
+                this.WonCorners = "" + (int.Parse(this.WonCorners) + int.Parse(statsItem.WonCorners));
+                this.Saves = "" + (int.Parse(this.Saves) + int.Parse(statsItem.Saves));
+                this.TotalShots = "" + (int.Parse(this.TotalShots) + int.Parse(statsItem.TotalShots));
+                this.PenaltyKickGoals = "" + (int.Parse(this.PenaltyKickGoals) + int.Parse(statsItem.PenaltyKickGoals));
+                this.PenaltyKickShots = "" + (int.Parse(this.PenaltyKickShots) + int.Parse(statsItem.PenaltyKickShots));
+                this.TotalPasses = "" + (int.Parse(this.TotalPasses) + int.Parse(statsItem.TotalPasses));
+            }
+        }
     }
 }

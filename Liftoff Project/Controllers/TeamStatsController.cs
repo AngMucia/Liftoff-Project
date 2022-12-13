@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using Liftoff_Project.Data;
 using Microsoft.Extensions.Logging;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
+using Microsoft.EntityFrameworkCore.Storage.Internal;
 
 namespace Liftoff_Project.Controllers
 {
     public class TeamStatsController : Controller
     {
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA2MTE3OTYsImV4cCI6MTY3MDY5ODE5Nn0.K2Gsh-OACq5RTR3c2U_B_oKzgRnVZVrfxI2r96_C054";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
         private ApplicationDbContext context;
         private readonly ILogger<HomeController> _logger;
 
@@ -30,9 +33,37 @@ namespace Liftoff_Project.Controllers
             return View();
         }
 
-        public IActionResult ViewTeam(string id)
+        public IActionResult ViewTeam(string teamId)
         {
+            List<TeamStats> overAllStats = new List<TeamStats>();
+            TeamStats teamStats = new TeamStats("0");
+            Team teamToView = new Team();
+
+            Task<IList<Team>> teams = GetTeams();
+
+            foreach(var team in context.Teams.ToList())
+            {
+                if(team.Id == teamId)
+                {
+                    teamToView = team;
+                    break;
+                }
+            }
+            overAllStats = context.TeamStats.Where(ts => teamToView.Name_en == ts.TeamName).ToList();
+            teamStats.SumAll(overAllStats);
             
+            ViewBag.teamStats = teamStats;
+            ViewBag.stats = overAllStats;
+            ViewBag.players = context.Players.Where(p => p.Team == teamToView.Name_en).ToList();
+            ViewData.Model = teamToView;
+            return View();
+        }
+
+        public IActionResult ViewPlayer(int playerId)
+        {
+            ViewBag.team = context.Teams.Single(t => t.Name_en == context.Players.Single(p => p.Id == playerId).Team);
+            ViewBag.stats = context.PlayerStats.Single(ps => ps.PlayerId == playerId);
+            ViewData.Model = context.Players.Single(p => p.Id == playerId);
             return View();
         }
 
@@ -64,5 +95,19 @@ namespace Liftoff_Project.Controllers
 
             return temp;
         }
+
+        /*public TeamStats SumAll(List<TeamStats> stats)
+        {
+            TeamStats temp = new TeamStats("0");
+
+            for(int i = 0; i < stats.Count; i++)
+            {
+                temp.Home_Goal = "" + (int.Parse(temp.Home_Goal) + int.Parse(stats[i].Home_Goal));
+                temp.FoulsCommitted = "" + (int.Parse(temp.FoulsCommitted) + int.Parse(stats[i].FoulsCommitted));
+                temp.YellowCards = "" + (int.Parse(temp.YellowCards) + int.Parse(stats[i].YellowCards));
+            }
+
+            return temp;
+        }*/
     }
 }

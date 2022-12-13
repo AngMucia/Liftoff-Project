@@ -200,5 +200,10 @@ C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.CopyComplete
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\Index.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\Index.cshtml.g.cs
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\ViewBracket.cshtml.g.cs
+=======
+C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewTeam.cshtml.g.cs
+C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewPlayer.cshtml.g.cs
+>>>>>>> fba6902d06bc2e99d71daf1b90afc3e62c6c2012
