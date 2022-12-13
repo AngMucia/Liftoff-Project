@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using Liftoff_Project.Data;
 using Microsoft.Extensions.Logging;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
+using Microsoft.EntityFrameworkCore.Storage.Internal;
 
 namespace Liftoff_Project.Controllers
 {
     public class TeamStatsController : Controller
     {
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA4NjUyNDcsImV4cCI6MTY3MDk1MTY0N30.e1hd3hfd1Zlad0lCj_cHY5z5Vl9hjB7kmU5IQaG_doc";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
         private ApplicationDbContext context;
         private readonly ILogger<HomeController> _logger;
 
@@ -47,8 +50,10 @@ namespace Liftoff_Project.Controllers
                     break;
                 }
             }
-            overAllStats = context.TeamStats.Where(ts => teamToView.Name_en == ts.TeamName).Distinct().ToList();
-
+            overAllStats = context.TeamStats.Where(ts => teamToView.Name_en == ts.TeamName).ToList();
+            teamStats = SumAll(overAllStats);
+            
+            ViewBag.teamStats = teamStats;
             ViewBag.stats = overAllStats;
             ViewData.Model = teamToView;
             return View();
@@ -83,39 +88,21 @@ namespace Liftoff_Project.Controllers
             return temp;
         }
 
-        public string SumAll(List<TeamStats> stats, string name)
+        public TeamStats SumAll(List<TeamStats> stats)
         {
-            string temp = "";
-            int sum = 0;
+            TeamStats temp = new TeamStats();
+            temp.Home_Goal = "0";
+            temp.FoulsCommitted = "0";
+            temp.YellowCards = "0";
 
             for(int i = 0; i < stats.Count; i++)
             {
-                if(name == "TotalShots")
-                {
-                    sum += int.Parse(stats[i].TotalShots);
-                }
+                temp.Home_Goal = "" + (int.Parse(temp.Home_Goal) + int.Parse(stats[i].Home_Goal));
+                temp.FoulsCommitted = "" + (int.Parse(temp.FoulsCommitted) + int.Parse(stats[i].FoulsCommitted));
+                temp.YellowCards = "" + (int.Parse(temp.YellowCards) + int.Parse(stats[i].YellowCards));
             }
 
-            temp = sum + "";
             return temp;
-        }
-
-        public List<TeamStats> noDuplicates(string teamName)
-        {
-            List<TeamStats> teams = context.TeamStats.Where(ts => teamName == ts.TeamName).Distinct().ToList();
-            string temp;
-
-            for(int i = 0; i < teams.Count; i++)
-            {
-                temp = teams[i].Date_US_Eastern;
-                if (teams[i].Date_US_Eastern.Count() > 1 && teams[i].Date_US_Eastern == temp)
-                {
-                    Console.WriteLine(teams[i].Date_US_Eastern.Count());
-                    teams.Remove(teams[i]);
-                }
-            }
-
-            return teams;
         }
     }
 }
