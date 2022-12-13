@@ -36,9 +36,7 @@
                                 <tr>
                                     <td> <img src="@row.Flag" /> </td>
                                     <td>
-                                        <form asp-controller="TeamStats" asp-action="ViewTeam" method="post">
-                                            <button type="submit" class="btn btn-secondary" name="teamId" value="@row.Id">@row.Name_en</button>
-                                        </form>
+                                        <a (click)="" class="btn btn-secondary" asp-controller="TeamStats" asp-action="ViewTeam" asp-route-teamId="@row.Id">@row.Name_en</a>
                                     </td>
                                     @if(ViewBag.user != null)
                                     {

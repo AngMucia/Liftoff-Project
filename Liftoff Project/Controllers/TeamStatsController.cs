@@ -33,7 +33,6 @@ namespace Liftoff_Project.Controllers
             return View();
         }
 
-        [HttpPost]
         public IActionResult ViewTeam(string teamId)
         {
             List<TeamStats> overAllStats = new List<TeamStats>();
