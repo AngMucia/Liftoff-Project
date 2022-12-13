@@ -172,7 +172,7 @@ namespace Liftoff_Project.Controllers
                 }
             }
 
-            return context.Teams.ToList();
+            return temp;
         }
       
     }
