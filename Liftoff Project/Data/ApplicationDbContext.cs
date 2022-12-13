@@ -38,7 +38,11 @@ namespace Liftoff_Project.Data
             modelBuilder.Entity<PlayerStats>()
                 .ToTable("PlayerStats").HasKey(ps => new {ps.PlayerId});
             modelBuilder.Entity<Bracket>()
+<<<<<<< HEAD
                 .ToTable("Brackets").HasKey(b => new {b.Id, b.UserId});
+=======
+                .ToTable("Brackets").HasKey(b => new { b.Id, b.UserId });
+>>>>>>> FixDatabase
             base.OnModelCreating(modelBuilder);
             
         }
