@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Liftoff_Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221212211746_Bracket table")]
-    partial class Brackettable
+    [Migration("20221213220225_Please revert back to normal")]
+    partial class Pleaserevertbacktonormal
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
