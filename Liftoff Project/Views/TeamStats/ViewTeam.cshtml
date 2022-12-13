@@ -1,0 +1,53 @@
+﻿@model Team;
+<div class="text-center alert-dark">
+<h1>@Model.Name_en</h1>
+<img src="@Model.Flag"/>
+</div>
+
+<div class="alert-dark text-center">
+    <h3>Overall Stats</h3>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Goals</th>
+                <th>Fouls Comitted</th>
+                <th>Yellow Card</th>
+                <th>Red Card</th>
+                <th>Offsides</th>
+                <th>Won Corners</th>
+                <th>Saves</th>
+                <th>Total Shots</th>
+                <th>Penalty Kick Goals</th>
+                <th>Penalty Kick Shots</th>
+                <th>Total Passes</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<div class="alert-dark">
+    <h3 class="text-center">Games Team Had</h3>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Home</th>
+                <th>Away</th>
+                <th>Home Goals</th>
+                <th>Away Goals</th>
+                <th>Date Played</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var stat in ViewBag.stats)
+            {
+                <tr>
+                    <td>@stat.Home_Team</td>
+                    <td>@stat.Away_Team</td>
+                    <td>@stat.Home_Goal</td>
+                    <td>@stat.Away_Goal</td>
+                    <td>@stat.Date_US_Eastern</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
