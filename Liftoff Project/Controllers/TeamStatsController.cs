@@ -37,7 +37,7 @@ namespace Liftoff_Project.Controllers
         public IActionResult ViewTeam(string teamId)
         {
             List<TeamStats> overAllStats = new List<TeamStats>();
-            TeamStats teamStats = new TeamStats();
+            TeamStats teamStats = new TeamStats("0");
             Team teamToView = new Team();
 
             Task<IList<Team>> teams = GetTeams();
@@ -51,10 +51,11 @@ namespace Liftoff_Project.Controllers
                 }
             }
             overAllStats = context.TeamStats.Where(ts => teamToView.Name_en == ts.TeamName).ToList();
-            teamStats = SumAll(overAllStats);
+            teamStats.SumAll(overAllStats);
             
             ViewBag.teamStats = teamStats;
             ViewBag.stats = overAllStats;
+            ViewBag.players = context.Players.ToList();
             ViewData.Model = teamToView;
             return View();
         }
@@ -88,12 +89,9 @@ namespace Liftoff_Project.Controllers
             return temp;
         }
 
-        public TeamStats SumAll(List<TeamStats> stats)
+        /*public TeamStats SumAll(List<TeamStats> stats)
         {
-            TeamStats temp = new TeamStats();
-            temp.Home_Goal = "0";
-            temp.FoulsCommitted = "0";
-            temp.YellowCards = "0";
+            TeamStats temp = new TeamStats("0");
 
             for(int i = 0; i < stats.Count; i++)
             {
@@ -103,6 +101,6 @@ namespace Liftoff_Project.Controllers
             }
 
             return temp;
-        }
+        }*/
     }
 }

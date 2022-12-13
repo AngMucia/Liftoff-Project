@@ -27,6 +27,14 @@
                 <td>@ViewBag.teamStats.Home_Goal</td>
                 <td>@ViewBag.teamStats.FoulsCommitted</td>
                 <td>@ViewBag.teamStats.YellowCards</td>
+                <td>@ViewBag.teamStats.RedCards</td>
+                <td>@ViewBag.teamStats.Offsides</td>
+                <td>@ViewBag.teamStats.WonCorners</td>
+                <td>@ViewBag.teamStats.Saves</td>
+                <td>@ViewBag.teamStats.TotalShots</td>
+                <td>@ViewBag.teamStats.PenaltyKickGoals</td>
+                <td>@ViewBag.teamStats.PenaltyKickShots</td>
+                <td>@ViewBag.teamStats.TotalPasses</td>
             </tr>
         </tbody>
     </table>
@@ -53,6 +61,29 @@
                     <td>@stat.Home_Goal</td>
                     <td>@stat.Away_Goal</td>
                     <td>@stat.Date_US_Eastern</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="alert-dark">
+    <h3 class="text-center">Players</h3>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in ViewBag.players)
+            {
+                <tr>
+                    <td>@player.Name</td>
+                    <td>@player.Jersey</td>
+                    <td>@player.Position</td>
                 </tr>
             }
         </tbody>
