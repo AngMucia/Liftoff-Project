@@ -54,7 +54,7 @@ namespace Liftoff_Project.Controllers
             
             ViewBag.teamStats = teamStats;
             ViewBag.stats = overAllStats;
-            ViewBag.players = context.Players.ToList();
+            ViewBag.players = context.Players.Where(p => p.Team == teamToView.Name_en).ToList();
             ViewData.Model = teamToView;
             return View();
         }
