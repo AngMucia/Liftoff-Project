@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
+using Microsoft.AspNetCore.Identity;
+using System.Linq;
 
 namespace Liftoff_Project.Controllers
 {
@@ -55,62 +58,52 @@ namespace Liftoff_Project.Controllers
         }
         public IActionResult CreateBracket()
         {
-            teams = GetTeams();
-            List<Team> allTeams = new List<Team>();
-            for (int i = 0; i < teams.Result.Count; i++)
+            /*teams = GetTeams();*/
+           
+            List<Team> allTeams = context.Teams.ToList();
+            /*for (int i = 0; i < teams.Result.Count; i++)
             {
                 allTeams.Add(teams.Result[i]);
 
-            }
+            }*/
             ViewBag.Teams = allTeams;
             return View();
         }
         [HttpPost]
         public IActionResult CreateBracket(string[] team1, string[] team2, string[] team3, string[] team4, string[] team5, string[] team6, string[] team7, string[] team8, string[] team9) 
         {
+            List<Team> Team = context.Teams.ToList();
+            ViewBag.Teams = Team;
             Bracket myBracket = new Bracket();
-            teams = GetTeams();
-            List<Team> allTeams = new List<Team>();
-            for (int i = 0; i < teams.Result.Count; i++)
+            IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+            myBracket.UserId = user.Id;
+            myBracket.BracketTeams = string.Join(',', team1) + " " + string.Join(",", team2) + " " + string.Join(",", team3) + "  " +  string.Join(",", team4) + "  " + string.Join(",", team5) + " " + string.Join(",", team6) + " " + string.Join(",", team7) + "  " + string.Join(",", team8) + "  " + string.Join(",", team9);
+            /*if (!ModelState.IsValid)
             {
-                allTeams.Add(teams.Result[i]);
-            }
-            ViewBag.Teams = allTeams;
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine($"team1: {team1[i]}\nTeam2: {team2[i]}\nTeam3: {team3[i]}\nTeam4: {team4[i]}\nteam5: {team5[i]}\nteam6: {team6[i]}\nteam7: {team7[i]}");
-
-
-            }
-            Console.WriteLine($"TEAM8: {team8[0]} {team8[1]}\nteam9: {team9[0]}");
-            myBracket.BracketTeams = new Dictionary<string, string[]>();
-            myBracket.BracketTeams.Add("team1", team1);
-            myBracket.BracketTeams.Add("team2", team2);
-            myBracket.BracketTeams.Add("team3", team3);
-            myBracket.BracketTeams.Add("team4", team4);
-            myBracket.BracketTeams.Add("team5", team5);
-            myBracket.BracketTeams.Add("team6", team6);
-            myBracket.BracketTeams.Add("team7", team7);
-            myBracket.BracketTeams.Add("team8", team8);
-            myBracket.BracketTeams.Add("team9", team9);
-            return View("Index");
+                return Redirect("CreateBracket"); 
+            }*/
+            
+            
+            return View("ViewBracket");
         }
 
         [HttpGet]
-        public IActionResult CompareBracket()
+        public IActionResult CompareBracket(/*AddBracketViewModel addBracketViewModel*/)
         {
-            teams = GetTeams();
-            List<Team> allTeams = new List<Team>();
-            for (int i = 0; i < teams.Result.Count; i++)
+            /*if (ModelState.IsValid)
             {
-                allTeams.Add(teams.Result[i]);
-                
-            }
-            ViewBag.Teams = allTeams;
+                Bracket myBracket = new Bracket
+                {
+                    Id = addBracketViewModel.BracketId
+                };
+                context.Brackets.Add(myBracket);
+                context.SaveChanges();
+
+            }*/
             return View();
         }
-        [HttpPost]
-        public IActionResult CompareBracket(Bracket bracket)
+        
+        public IActionResult ViewBracket()
         {
             return View();
         }
