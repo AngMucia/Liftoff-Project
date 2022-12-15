@@ -2,34 +2,101 @@
 
 <div class="alert-dark text-center">
     <h1>@Model.Name</h1>
+    <h1><a asp-controller="TeamStats" asp-action="ViewTeam" asp-route-teamId="@ViewBag.team.Id">@Model.Team</a></h1>
+    <h1><img src="@ViewBag.team.Flag" /></h1>
+    <h3>@Model.Position</h3>
     <div>
         <h3>Player Info</h3>
-        <p></p>
+        <table class="table table-dark">
+            <colgroup>
+                <col span="2" />
+            </colgroup>
+            <tr>
+                <th>Age</th>
+                <td>@Model.Age</td>
+            </tr>
+            <tr>
+                <th>Height (Meters)</th>
+                <td>@Model.Height_meter</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>@Model.Weight</td>
+            </tr>
+            <tr>
+                <th>Jersey Number</th>
+                <td>@Model.Jersey</td>
+            </tr>
+        </table>
     </div>
 
     <div>
         <h3>Player Stats</h3>
         <table class="table table-dark">
+            <colgroup>
+                <col span="2" />
+            </colgroup>
             <thead>
+               
                 <tr>
-                    <th>Total Goals Scored</th>
-                    <th>Fouls Comitted</th>
-                    <th>Fouls Suffered</th>
-                    <th>Own Goals</th>
+                    
+                    @if(Model.Position == "Goalkeeper")
+                    {
+                        <th>Saves</th>
+                        <th>Goals Conceded</th>
+                        <th>ShotsFaced</th>
+                    }
+                    else if (Model.Position == "Forward" || Model.Position == "Midfielder")
+                    {
+                        <th>Total Goals Scored</th>
+                        <th>Total Shots</th>
+                        <th>Goals Assists</th>
+                        <th>Off Sides</th>
+                    }
+                    else if (Model.Position == "Defender")
+                    {
+                        <th>Own Goals</th>
+                        <th>Goals Conceded</th>
+                        <th>Goals Assists</th>
+                        <th>Total Shots</th>
+                    }
+                    <th>Total Play Time (Minutes)</th>
+                    <th>Average Play Time (Minutes)</th>
                     <th>Red Cards</th>
                     <th>Yellow Cards</th>
-                    <th>Goals Assists</th>
+                    <th>Fouls Comitted</th>
+                    <th>Fouls Suffered</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>@ViewBag.stats.TotalGoals</td>
-                    <td>@ViewBag.stats.FoulsCommitted</td>
-                    <td>@ViewBag.stats.FoulsSuffered</td>
-                    <td>@ViewBag.stats.OwnGoals</td>
+                    
+                    @if(Model.Position == "Goalkeeper")
+                    {
+                        <td>@ViewBag.stats.Saves</td>
+                        <td>@ViewBag.stats.GoalsConceded</td>
+                        <td>@ViewBag.stats.ShotsFaced</td>
+                    }
+                    else if (Model.Position == "Forward" || Model.Position == "Midfielder")
+                    {
+                        <td>@ViewBag.stats.TotalGoals</td>
+                        <td>@ViewBag.stats.TotalShots</td>
+                        <td>@ViewBag.stats.GoalAssists</td>
+                        <td>@ViewBag.stats.OffSides</td>
+                    }
+                    else if (Model.Position == "Defender")
+                    {
+                        <td>@ViewBag.stats.OwnGoals</td>
+                        <td>@ViewBag.stats.GoalsConceded</td>
+                        <td>@ViewBag.stats.GoalAssists</td>
+                        <td>@ViewBag.stats.TotalShots</td>
+                    }
+                    <td>@ViewBag.stats.Total_PlayTime_min</td>
+                    <td>@ViewBag.stats.AveragePlayTime_min</td>
                     <td>@ViewBag.stats.RedCards</td>
                     <td>@ViewBag.stats.YellowCards</td>
-                    <td>@ViewBag.stats.GoalAssists</td>
+                    <td>@ViewBag.stats.FoulsCommitted</td>
+                    <td>@ViewBag.stats.FoulsSuffered</td>
                 </tr>
             </tbody>
         </table>
