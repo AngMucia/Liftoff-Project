@@ -1,5 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<TeamGroupStandings>
+
+<h1 class="text-center">Team Standings</h1>
+
+<div>
+    @foreach(var group in Model)
+    {
+        <h2>Group: @group.Group</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Matches Played</th>
+                    <th>Matches Lost</th>
+                    <th>Point / Score</th>
+                    <th>Goals for</th>
+                    <th>Goals Against</th>
+                    <th>Goals Difference</th>
+                    <th>Drawn</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var team in group.Teams)
+                {
+                    <tr>
+                        <td>@team.Name_en</td>
+                        <td>@team.Mp</td>
+                        <td>@team.W</td>
+                        <td>@team.L</td>
+                        <td>@team.Pts</td>
+                        <td>@team.Ga</td>
+                        <td>@team.Gd</td>
+                        <td>@team.D</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
