@@ -18,7 +18,7 @@ namespace Liftoff_Project.Controllers
     public class TeamStatsController : Controller
     {
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzExMzU2MjIsImV4cCI6MTY3MTIyMjAyMn0.tHbyElpbGgpWgoPQo6v02pinjqC0qSQTRwYQPhXdn-I";
         private ApplicationDbContext context;
         private readonly ILogger<HomeController> _logger;
 
@@ -41,7 +41,7 @@ namespace Liftoff_Project.Controllers
 
             Task<IList<Team>> teams = GetTeams();
 
-            foreach(var team in context.Teams.ToList())
+            foreach(var team in teams.Result)
             {
                 if(team.Id == teamId)
                 {
@@ -66,10 +66,19 @@ namespace Liftoff_Project.Controllers
             ViewData.Model = context.Players.Single(p => p.Id == playerId);
             return View();
         }
+        public IActionResult ViewTeamStandings()
+        {
+            Task<List<TeamGroupStandings>> teamStandings = GetStandings();
+
+            Console.WriteLine(teamStandings.Result.Count);
+
+            ViewData.Model = teamStandings.Result;
+            return View("Index");
+        }
 
         public async Task<IList<Team>> GetTeams()
         {
-            IList<Team> temp = new List<Team>();
+            List<Team> temp = new List<Team>();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseUrl);
@@ -84,6 +93,38 @@ namespace Liftoff_Project.Controllers
                     //Console.WriteLine(results);
                     RootObject data = JsonConvert.DeserializeObject<RootObject>(results);
                     temp = data.Data;
+
+                }
+                else
+                {
+
+                    Console.WriteLine(getData.StatusCode);
+                }
+            }
+
+            return temp;
+        }
+
+        
+        public async Task<List<TeamGroupStandings>> GetStandings()
+        {
+            List<TeamGroupStandings> temp = new List<TeamGroupStandings>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + bearerToken);
+                HttpResponseMessage getData = await client.GetAsync("standings");
+
+                if (getData.IsSuccessStatusCode)
+                {
+                    string results = getData.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results);
+                    TeamStandingsObject data = JsonConvert.DeserializeObject<TeamStandingsObject>(results);
+                    temp = data.Data;
+
+                    Console.WriteLine(data.Status);
 
                 }
                 else
