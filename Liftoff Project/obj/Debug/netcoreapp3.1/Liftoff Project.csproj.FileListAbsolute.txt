@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.StaticWebAssets.xml
@@ -102,6 +103,8 @@ C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.pdb
 C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache
 =======
+=======
+>>>>>>> 9748699 (Deleted obj file to fix program)
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.StaticWebAssets.xml
@@ -209,4 +212,7 @@ C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.dll
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.pdb
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache
+<<<<<<< HEAD
+>>>>>>> 9748699 (Deleted obj file to fix program)
+=======
 >>>>>>> 9748699 (Deleted obj file to fix program)

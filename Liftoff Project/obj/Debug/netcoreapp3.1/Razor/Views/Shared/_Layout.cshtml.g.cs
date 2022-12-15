@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "adefc8426b2eae93921d08acb082569bd10eb33e"
+=======
+#pragma checksum "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "adefc8426b2eae93921d08acb082569bd10eb33e"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #pragma checksum "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "adefc8426b2eae93921d08acb082569bd10eb33e"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -86,7 +90,11 @@ using Liftoff_Project.Models;
         {
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e10163", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e10160", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e10160", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -100,7 +108,11 @@ using Liftoff_Project.Models;
 #nullable disable
                 WriteLiteral(" - World Cup</title>\r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e10836", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e10832", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e10832", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -119,7 +131,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e12015", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e12011", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e12011", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -150,9 +166,15 @@ using Liftoff_Project.Models;
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e13898", async() => {
                 WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e14354", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e13894", async() => {
+                WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e14350", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e13894", async() => {
                 WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
@@ -185,7 +207,11 @@ using Liftoff_Project.Models;
                 <div class=""navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"">
                     ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e16540", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e16536", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "adefc8426b2eae93921d08acb082569bd10eb33e16536", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -204,7 +230,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                    <ul class=\"navbar-nav flex-grow-1\">\r\n                        <li class=\"nav-item\">\r\n                            ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e17857", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e17853", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e17853", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -229,7 +259,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e19696", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e19692", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e19692", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -254,7 +288,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e21538", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e21534", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e21534", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -279,7 +317,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e23391", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e23387", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e23387", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -347,7 +389,11 @@ using Liftoff_Project.Models;
                 WriteLiteral("\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </nav>\r\n    </header>\r\n    <div class=\"container\">\r\n        <main role=\"main\" class=\"pb-3\">\r\n            ");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 47 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+=======
+#line 47 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 47 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -358,7 +404,11 @@ using Liftoff_Project.Models;
 #nullable disable
                 WriteLiteral("\r\n        </main>\r\n    </div>\r\n\r\n    <footer class=\"border-top footer text-muted\">\r\n        <div class=\"container\">\r\n            &copy; 2022 - Liftoff_Project - ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e29505", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e29500", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e29500", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -382,7 +432,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        </div>\r\n    </footer>\r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e31187", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e31182", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e31182", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -400,7 +454,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e32288", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e32283", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e32283", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -418,7 +476,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e33389", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e33384", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adefc8426b2eae93921d08acb082569bd10eb33e33384", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -432,7 +494,11 @@ using Liftoff_Project.Models;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_18);
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 58 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+=======
+#line 58 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 58 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -452,7 +518,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ScriptTagHelper.AppendVersion = true;
                 WriteLiteral("\r\n    ");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 59 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+=======
+#line 59 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 59 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Shared\_Layout.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)

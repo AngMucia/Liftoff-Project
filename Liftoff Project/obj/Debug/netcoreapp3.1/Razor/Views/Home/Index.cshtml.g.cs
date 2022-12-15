@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "522e01babdee8ac7be56b45ac2de9185adcc54ca"
+=======
+#pragma checksum "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "522e01babdee8ac7be56b45ac2de9185adcc54ca"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #pragma checksum "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "522e01babdee8ac7be56b45ac2de9185adcc54ca"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -80,7 +84,11 @@ using Liftoff_Project.Models;
 #nullable disable
             WriteLiteral("\r\n\r\n<div class=\"text-center\">\r\n    <h1 class=\"display-4\">Welcome To World Cup Bracket Maker</h1>\r\n   \r\n    ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca6313", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca6309", async() => {
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca6309", async() => {
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -116,7 +124,11 @@ using Liftoff_Project.Models;
             BeginWriteAttribute("class", " class=\"", 440, "\"", 460, 1);
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 18 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 18 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 18 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -143,7 +155,11 @@ WriteAttributeValue("", 448, ViewBag.pos, 448, 12, false);
 ");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 32 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 32 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 32 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -156,7 +172,11 @@ WriteAttributeValue("", 448, ViewBag.pos, 448, 12, false);
 #nullable disable
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 34 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 34 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 34 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -170,7 +190,11 @@ WriteAttributeValue("", 448, ViewBag.pos, 448, 12, false);
             BeginWriteAttribute("src", " src=\"", 1113, "\"", 1128, 1);
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 37 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 37 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 37 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -182,9 +206,15 @@ WriteAttributeValue("", 1119, row.Flag, 1119, 9, false);
             EndWriteAttribute();
             WriteLiteral(" /> </td>\r\n                                    <td>\r\n                                        ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca10576", async() => {
 #nullable restore
 #line 39 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca10567", async() => {
+#nullable restore
+#line 39 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca10567", async() => {
 #nullable restore
@@ -211,7 +241,11 @@ WriteAttributeValue("", 1119, row.Flag, 1119, 9, false);
             BeginWriteTagHelperAttribute();
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 39 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 39 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 39 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -233,7 +267,11 @@ WriteAttributeValue("", 1119, row.Flag, 1119, 9, false);
             WriteLiteral("\r\n                                    </td>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 41 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 41 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 41 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -245,11 +283,19 @@ WriteAttributeValue("", 1119, row.Flag, 1119, 9, false);
 #nullable disable
             WriteLiteral("                                        <td>\r\n                                            ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca13902", async() => {
                 WriteLiteral("\r\n                                                <button class=\"btn-success\" type=\"submit\" name=\"selectedFav\"");
                 BeginWriteAttribute("value", " value=\"", 1757, "\"", 1772, 1);
 #nullable restore
 #line 45 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca13890", async() => {
+                WriteLiteral("\r\n                                                <button class=\"btn-success\" type=\"submit\" name=\"selectedFav\"");
+                BeginWriteAttribute("value", " value=\"", 1757, "\"", 1772, 1);
+#nullable restore
+#line 45 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca13890", async() => {
                 WriteLiteral("\r\n                                                <button class=\"btn-success\" type=\"submit\" name=\"selectedFav\"");
@@ -289,7 +335,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
             WriteLiteral("\r\n                                        </td>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 50 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 50 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 50 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -301,7 +351,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
             WriteLiteral("                                </tr>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 52 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 52 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 52 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -312,7 +366,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
 #nullable disable
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 52 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 52 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 52 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -326,7 +384,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
             WriteLiteral("               </tbody>\r\n           </table>\r\n       </div>\r\n   <div class=\"float-right\">\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 59 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 59 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 59 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -348,7 +410,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
 ");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 70 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 70 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 70 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -361,7 +427,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
 #nullable disable
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 72 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 72 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 72 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -374,7 +444,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
             WriteLiteral("                            <tr>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 75 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 75 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 75 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -388,7 +462,11 @@ WriteAttributeValue("", 1765, row.Id, 1765, 7, false);
             BeginWriteAttribute("src", " src=\"", 3015, "\"", 3030, 1);
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 77 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 77 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 77 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -400,17 +478,23 @@ WriteAttributeValue("", 3021, row.Flag, 3021, 9, false);
             EndWriteAttribute();
             WriteLiteral(" /></td>\r\n                                  <td>\r\n                                        ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca19499", async() => {
                 WriteLiteral("\r\n                                            <button class=\"btn btn-secondary\" type=\"submit\" name=\"teamId\"");
                 BeginWriteAttribute("value", " value=\"", 3297, "\"", 3312, 1);
 #nullable restore
 #line 80 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 =======
+=======
+>>>>>>> 9748699 (Deleted obj file to fix program)
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca19478", async() => {
                 WriteLiteral("\r\n                                            <button class=\"btn btn-secondary\" type=\"submit\" name=\"teamId\"");
                 BeginWriteAttribute("value", " value=\"", 3297, "\"", 3312, 1);
 #nullable restore
 #line 80 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+<<<<<<< HEAD
+>>>>>>> 9748699 (Deleted obj file to fix program)
+=======
 >>>>>>> 9748699 (Deleted obj file to fix program)
 WriteAttributeValue("", 3305, row.Id, 3305, 7, false);
 
@@ -421,7 +505,11 @@ WriteAttributeValue("", 3305, row.Id, 3305, 7, false);
                 WriteLiteral(">");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 80 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 80 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 80 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -452,17 +540,23 @@ WriteAttributeValue("", 3305, row.Id, 3305, 7, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                  </td>\r\n                                  <td>\r\n                                   ");
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca22375", async() => {
                 WriteLiteral("\r\n                                            <button type=\"submit\" name=\"selectedFav\"");
                 BeginWriteAttribute("value", " value=\"", 3658, "\"", 3673, 1);
 #nullable restore
 #line 85 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 =======
+=======
+>>>>>>> 9748699 (Deleted obj file to fix program)
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "522e01babdee8ac7be56b45ac2de9185adcc54ca22352", async() => {
                 WriteLiteral("\r\n                                            <button type=\"submit\" name=\"selectedFav\"");
                 BeginWriteAttribute("value", " value=\"", 3658, "\"", 3673, 1);
 #nullable restore
 #line 85 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+<<<<<<< HEAD
+>>>>>>> 9748699 (Deleted obj file to fix program)
+=======
 >>>>>>> 9748699 (Deleted obj file to fix program)
 WriteAttributeValue("", 3666, row.Id, 3666, 7, false);
 
@@ -496,7 +590,11 @@ WriteAttributeValue("", 3666, row.Id, 3666, 7, false);
             WriteLiteral("\r\n                                  </td>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 90 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 90 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 90 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -509,7 +607,11 @@ WriteAttributeValue("", 3666, row.Id, 3666, 7, false);
             WriteLiteral("                            </tr>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 93 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 93 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 93 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -520,7 +622,11 @@ WriteAttributeValue("", 3666, row.Id, 3666, 7, false);
 #nullable disable
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 93 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 93 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 93 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
@@ -533,7 +639,11 @@ WriteAttributeValue("", 3666, row.Id, 3666, 7, false);
             WriteLiteral("              </tbody>\r\n          </table>\r\n");
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 97 "C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+=======
+#line 97 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
+>>>>>>> 9748699 (Deleted obj file to fix program)
 =======
 #line 97 "C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\Views\Home\Index.cshtml"
 >>>>>>> 9748699 (Deleted obj file to fix program)
