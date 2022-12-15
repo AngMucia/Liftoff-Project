@@ -18,7 +18,7 @@ namespace Liftoff_Project.Controllers
     public class TeamStatsController : Controller
     {
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzA5NTIxNjYsImV4cCI6MTY3MTAzODU2Nn0.vsqERHIxs5Kyo-92VuQMeaqi9dLUvTAThkYcbk7WAA8";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzExMzU2MjIsImV4cCI6MTY3MTIyMjAyMn0.tHbyElpbGgpWgoPQo6v02pinjqC0qSQTRwYQPhXdn-I";
         private ApplicationDbContext context;
         private readonly ILogger<HomeController> _logger;
 
