@@ -1,13 +1,9 @@
-﻿@model Liftoff_Project.Controllers.BracketController
-@{
-
-    var n = 0;
-}
+﻿@model List<Team>
 
     <h1>Compare Your Bracket(s)</h1>
 
-<form id="myform" asp-controller="Bracket" asp-action="ViewBracket" method="get">
-
+<form id="myform" asp-controller="Bracket" asp-action="CreateBracket" method="post">
+    
     @for (int i = 0; i < 4; i++)
     {
 
@@ -17,14 +13,14 @@
             <div class="round r-of-4">
                 <div class="bracket-game">
                     <div class="player top ">
-                        <p>@ViewBag.BracketTeams[0][i]</p>
+                       <p>sfsefsfse</p>
 
                         @* <div class="score">
                     3
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <p>@ViewBag.BracketTeams[1]</p>
+                       <p>gdhdgrdgr</p>
                         @* <div class="score">
                     1
                     </div>*@
@@ -33,13 +29,13 @@
                 </div>
                 <div class="bracket-game cont">
                     <div class="player top ">
-                        <p>@ViewBag.BracketTeams[2]</p>
+                        <p>fsgrrthr</p>
                         @* <div class="score">
                     0
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <p>@ViewBag.BracketTeams[3]</p>
+                       <p>sfrgrgg</p>
                         @*<div class="score">
                     3
                     </div>*@
@@ -62,13 +58,13 @@
             <div class="round r-of-2">
                 <div class="bracket-game">
                     <div class="player top ">
-                        <p>@ViewBag.BracketTeams[4]</p>
+                        <p>sfghdhrht</p>
                         @* <div class="score">
                     2
                     </div>*@
                     </div>
                     <div class="player bot ">
-                        <p>@ViewBag.BracketTeams[5]</p>
+                        <p>yjgergrg</p>
                         @* <div class="score">
                     3
                     </div>*@
@@ -89,20 +85,16 @@
         <div class="round semi-finals">
             <div class="bracket-game">
                 <div class="player top">
-                    <p>@ViewBag.BracketTeams[6]</p>
+                   <p>ghieuhgilwfe</p>
                 </div>
             </div>
         </div>
         @if (i != 1 && i != 3)
         {
-
             <div class="round finals">
                 <div class="bracket-game">
                     <div class="player top">
-                        <p>@ViewBag.BracketTeams[7][n]</p>
-                        @{
-                            n = n + 1;
-                        }
+                        <p>hugbgdjbgd</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +103,7 @@
                 <div class="round winner">
                     <div class="bracket-game">
                         <div class="player top">
-                            <p>@ViewBag.BracketTeams[22]</p>
+                        <p>esfhsfh</p>
                         </div>
                     </div>
                 </div>
@@ -125,5 +117,6 @@
         @*Winner dropmenu starts here*@
     }
 
-
+    
 </form>
+
