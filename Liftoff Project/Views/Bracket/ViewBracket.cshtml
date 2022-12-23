@@ -5,14 +5,22 @@
 }
 
 <h1>View Your Bracket(s)!</h1>
-@if(ViewBag.BracketId.Count == 0)
+@if (ViewBag.User == null)
+{
+    <h2>Please Login or Register To Use This Feature!</h2>
+
+    <div>
+        <p>Unfortunately you do not have access to this feature.</p>
+    </div>
+}
+else if(ViewBag.BracketId.Count == 0)
 {
     <div>
      <h2>There is nothing to view here</h2>
             <br />
            
             <p>Lets go and create a bracket!</p>
-            <a href="~/Bracket/CreateBracket">Create a bracket</a>
+        <a href="~/Bracket/CreateBracket" class="btn btn-info" role="button">Create A Bracket</a>
     </div>
 }
 else
@@ -24,5 +32,9 @@ else
         {
             <a class="btn btn-secondary" asp-controller="Bracket" asp-action="Index" asp-route-bracketId="@ViewBag.BracketId[i].Id">@ViewBag.BracketId[i].Id</a>
         }
+    </div>
+    <br />
+    <div>
+        <a href="~/Home" class="btn btn-info" role="button">Go Back Home</a>
     </div>
 }
