@@ -52,8 +52,19 @@ namespace Liftoff_Project.Controllers
             return temp;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int bracketId)
         {
+            Bracket oneBracketId = context.Brackets.Single(ob => ob.Id == bracketId);
+            string[] teams = oneBracketId.BracketTeams.Split("  ");
+            Console.WriteLine(teams.Length);
+            List<string[]> allTeams = new List<string[]>();
+            for (int i = 0; i < teams.Length; i++)
+            {
+                allTeams.Add(teams[i].Split(','));
+            }
+            Console.WriteLine(allTeams.Count);
+            ViewBag.Mybrackets1 = allTeams;
+
             return View();
         }
         public IActionResult CreateBracket()
