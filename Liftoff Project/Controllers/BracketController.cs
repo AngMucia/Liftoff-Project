@@ -150,13 +150,28 @@ namespace Liftoff_Project.Controllers
                 ViewBag.User = user;
                 ViewBag.BracketId = bracket;
             }
-            
-           
-           
+            return View();
+        }
+        public IActionResult Delete()
+        {
+            IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
 
+            List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
 
+            ViewBag.User = user;
+            ViewBag.BracketId = bracket;
+            //might change code in here
 
             return View();
+        }
+        [HttpPost]
+        public IActionResult Delete(int[] Id)
+        {
+            foreach(int id in Id)
+            {
+                //still working on here
+            }
+            return Redirect("Index");
         }
     }
 }
