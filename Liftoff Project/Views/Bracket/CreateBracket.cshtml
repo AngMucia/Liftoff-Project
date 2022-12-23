@@ -2,15 +2,26 @@
 @model Liftoff_Project.Controllers.BracketController
 
 
+@if(ViewBag.User == null)
+{
+    <h2>Please Login or Register To Create Bracket</h2>
+
+    <div>
+        <p>Unfortunately you do not have access to this feature.</p>
+    </div>
+}
+else
+{
+    
 <h1>Create A Bracket!</h1>
 
 <form id="myform" asp-controller="Bracket" asp-action="CreateBracket" method="post">
    
-
+        <div class="dark">
     @for (int i = 0; i < 4; i++)
                {
-
-        <div>
+    
+        <div >
             
 
                 <div class="round r-of-4">
@@ -138,7 +149,7 @@
                     <div class="next-line"></div>
                     <div class="clear"></div>
                 </div>
-            </div> @*TEST DIV ENDS HERE!!!!!*@
+        </div> @*TEST DIV ENDS HERE!!!!!*@
             <div class="round semi-finals">
                 <div class="bracket-game">
                     <div class="player top">
@@ -198,8 +209,12 @@
         
         @*Winner dropmenu starts here*@
         }
-
-    <button id="mySubmit" class="mySubmit" type="submit">Click on me!</button>
+    </div>
+        <br />
+        <div>
+        <button id="mySubmit" class="btn btn-info" type="submit">Submit!</button>
+            <a href="~/Home" class="btn btn-info" role="button">Go Back Home</a>
+        </div>
     <script type="text/javascript" language="JavaScript" runat="server">
 
                 let button = document.getElementById("mySubmit");
@@ -216,17 +231,7 @@
                 event.preventDefault();
             }
         }
-
-                //function compareOptionTag() {
-                //    let team1 = document.getElementById("team1");
-                //    let team2 = document.getElementsById("team2");
-                //    let frm = document.forms["myfrom"];
-                //    if (team1 === team2) {
-                //        erro message maybe
-                //       event.preventDefault()
-                //    }
-
-                //}
-
+        
     </script>
 </form>
+}
