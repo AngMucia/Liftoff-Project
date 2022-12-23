@@ -24,7 +24,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>@ViewBag.teamStats.Home_Goal</td>
+                <td>@ViewBag.goals</td>
                 <td>@ViewBag.teamStats.FoulsCommitted</td>
                 <td>@ViewBag.teamStats.YellowCards</td>
                 <td>@ViewBag.teamStats.RedCards</td>
@@ -53,14 +53,14 @@
             </tr>
         </thead>
         <tbody>
-            @foreach(var stat in ViewBag.stats)
+            @foreach(var match in ViewBag.matches)
             {
                 <tr>
-                    <td>@stat.Home_Team</td>
-                    <td>@stat.Away_Team</td>
-                    <td>@stat.Home_Goal</td>
-                    <td>@stat.Away_Goal</td>
-                    <td>@stat.Date_US_Eastern</td>
+                    <td>@match.Home_team_en</td>
+                    <td>@match.Away_team_en</td>
+                    <td>@match.Home_Score</td>
+                    <td>@match.Away_Score</td>
+                    <td>@match.Local_date</td>
                 </tr>
             }
         </tbody>
