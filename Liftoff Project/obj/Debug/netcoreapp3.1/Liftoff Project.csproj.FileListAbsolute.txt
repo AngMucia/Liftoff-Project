@@ -1,102 +1,107 @@
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.StaticWebAssets.xml
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.exe
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.deps.json
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.runtimeconfig.json
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.runtimeconfig.dev.json
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.pdb
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.Views.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.Views.pdb
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.AssemblyReference.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.AssemblyInfoInputs.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.AssemblyInfo.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.CoreCompileInputs.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorAssemblyInfo.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorAssemblyInfo.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\Liftoff Project.StaticWebAssets.Manifest.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\Liftoff Project.StaticWebAssets.xml
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.TagHelpers.input.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.TagHelpers.output.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorCoreGenerate.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CompareBracket.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CreateBracket.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\Index.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\ViewBracket.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\Index.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewPlayer.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewTeam.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorTargetAssemblyInfo.cache
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorTargetAssemblyInfo.cs
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.Views.pdb
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.CopyComplete
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.dll
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.pdb
-C:\Users\zkrem\Documents\LaunchCodeCamp\Lift Off\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.StaticWebAssets.xml
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.exe
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.deps.json
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.runtimeconfig.json
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.runtimeconfig.dev.json
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.pdb
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.Views.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Liftoff Project.Views.pdb
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.AssemblyReference.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.AssemblyInfoInputs.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.AssemblyInfo.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.CoreCompileInputs.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorAssemblyInfo.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorAssemblyInfo.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\Liftoff Project.StaticWebAssets.Manifest.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\Liftoff Project.StaticWebAssets.Pack.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Liftoff Project.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Liftoff Project.props
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Liftoff Project.props
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Liftoff Project.props
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\staticwebassets\Liftoff Project.StaticWebAssets.xml
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.TagHelpers.input.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.TagHelpers.output.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorCoreGenerate.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CompareBracket.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\CreateBracket.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\Index.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\ViewBracket.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\Index.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewPlayer.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\TeamStats\ViewTeam.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorTargetAssemblyInfo.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.RazorTargetAssemblyInfo.cs
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.Views.pdb
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.csproj.CopyComplete
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.dll
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.pdb
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache

@@ -6051,19 +6051,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zkrem\\.nuget\\packages\\": {}
+    "C:\\Users\\z3whu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zkrem\\Documents\\LaunchCodeCamp\\Lift Off\\Liftoff-Project\\Liftoff Project\\Liftoff Project.csproj",
+      "projectUniqueName": "C:\\Users\\z3whu\\OneDrive\\Desktop\\Liftoff Project\\Liftoff-Project\\Liftoff Project\\Liftoff Project.csproj",
       "projectName": "Liftoff Project",
-      "projectPath": "C:\\Users\\zkrem\\Documents\\LaunchCodeCamp\\Lift Off\\Liftoff-Project\\Liftoff Project\\Liftoff Project.csproj",
-      "packagesPath": "C:\\Users\\zkrem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zkrem\\Documents\\LaunchCodeCamp\\Lift Off\\Liftoff-Project\\Liftoff Project\\obj\\",
+      "projectPath": "C:\\Users\\z3whu\\OneDrive\\Desktop\\Liftoff Project\\Liftoff-Project\\Liftoff Project\\Liftoff Project.csproj",
+      "packagesPath": "C:\\Users\\z3whu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\z3whu\\OneDrive\\Desktop\\Liftoff Project\\Liftoff-Project\\Liftoff Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zkrem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\z3whu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6143,7 +6143,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

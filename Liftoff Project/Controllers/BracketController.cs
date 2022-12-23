@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
-using System.Diagnostics;
 
 namespace Liftoff_Project.Controllers
 {
@@ -24,7 +23,7 @@ namespace Liftoff_Project.Controllers
             context = dbContext;
         }
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzExMzU2MjIsImV4cCI6MTY3MTIyMjAyMn0.tHbyElpbGgpWgoPQo6v02pinjqC0qSQTRwYQPhXdn-I";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzE3NDcxMjQsImV4cCI6MTY3MTgzMzUyNH0.lf3H2fC6j3WtG_pDnGDzxMhE-T47bpADwcYzkvpaNjU";
         Task<IList<Team>> teams;
         public async Task<IList<Team>> GetTeams()
         {
@@ -53,32 +52,25 @@ namespace Liftoff_Project.Controllers
             return temp;
         }
 
-        public IActionResult Index(int bracketId)
+        public IActionResult Index()
         {
-            Bracket oneBracketId = context.Brackets.Single(ob => ob.Id == bracketId);
-            string[] teams = oneBracketId.BracketTeams.Split("  ");
-            Console.WriteLine(teams.Length);
-            List<string[]> allTeams = new List<string[]>();
-            for (int i = 0; i < teams.Length; i++)
-            {
-                allTeams.Add(teams[i].Split(','));
-            }
-            Console.WriteLine(allTeams.Count);
-            ViewBag.Mybrackets1 = allTeams;
-
             return View();
         }
         public IActionResult CreateBracket()
         {
             /*teams = GetTeams();*/
-           
-            List<Team> allTeams = context.Teams.ToList();
-            /*for (int i = 0; i < teams.Result.Count; i++)
+            if (User.Identity.Name != null)
             {
-                allTeams.Add(teams.Result[i]);
+                IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+                List<Team> allTeams = context.Teams.ToList();
+                /*for (int i = 0; i < teams.Result.Count; i++)
+                {
+                    allTeams.Add(teams.Result[i]);
 
-            }*/
-            ViewBag.Teams = allTeams;
+                }*/
+                ViewBag.Teams = allTeams;
+                ViewBag.User = user;
+            }
             return View();
         }
         [HttpPost]
@@ -90,7 +82,7 @@ namespace Liftoff_Project.Controllers
             
             IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
             myBracket.UserId = user.Id;
-            myBracket.BracketTeams = string.Join(',', team1) + "  " + string.Join(",", team2) + "  " + string.Join(",", team3) + "  " +  string.Join(",", team4) + "  " + string.Join(",", team5) + "  " + string.Join(",", team6) + "  " + string.Join(",", team7) + "  " + string.Join(",", team8) + "  " + string.Join(",", team9);
+            myBracket.BracketTeams = string.Join(',', team1) + " " + string.Join(",", team2) + " " + string.Join(",", team3) + "  " +  string.Join(",", team4) + "  " + string.Join(",", team5) + " " + string.Join(",", team6) + " " + string.Join(",", team7) + "  " + string.Join(",", team8) + "  " + string.Join(",", team9);
             context.Brackets.Add(myBracket);
             context.SaveChanges();
             List<string[]> myBrackets1 = new List<string[]>();
@@ -105,40 +97,68 @@ namespace Liftoff_Project.Controllers
             myBrackets1.Add(team9);
             Console.WriteLine(myBracket.BracketTeams);
             ViewBag.MyBrackets1 = myBrackets1;
-            return View("Index");
+            return View("ViewBracket");
         }
 
         [HttpGet]
         public IActionResult CompareBracket(/*AddBracketViewModel addBracketViewModel*/)
         {
-            IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
-            List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
-            Console.WriteLine(bracket.Count);
-            foreach (var brack in bracket)
+            //IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+            //List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
+            //Console.WriteLine(bracket.Count);
+            //foreach (var brack in bracket)
+            //{
+            //    string[] myBrackets = brack.BracketTeams.Split(',');
+            //    ViewBag.BracketTeams = myBrackets;
+            //}
+            if (User.Identity.Name != null)
             {
-                string[] myBrackets = brack.BracketTeams.Split(',');
-                ViewBag.BracketTeams = myBrackets;
+                IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+
+                List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
+
+                ViewBag.User = user;
+                ViewBag.BracketId = bracket;
             }
 
             return View();
         }
-        //intial list of string tthen breakdown 
-        //selct which bracket to view on to web page
-        public IActionResult ViewBracket(string bracketName)
+        
+        public IActionResult ViewBracket()
         {
             //grab bracket Id so we can grab its data from the bracket created
             //grab data from database and response.
+            if (User.Identity.Name != null)
+            {
+                IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+
+                List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
+
+                ViewBag.User = user;
+                ViewBag.BracketId = bracket;
+            }
+            return View();
+        }
+        public IActionResult Delete()
+        {
             IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+
             List<Bracket> bracket = context.Brackets.Where(b => b.UserId == user.Id).ToList();
 
+            ViewBag.User = user;
             ViewBag.BracketId = bracket;
-            
-           
-           
-
-
+            //might change code in here
 
             return View();
+        }
+        [HttpPost]
+        public IActionResult Delete(int[] Id)
+        {
+            foreach(int id in Id)
+            {
+                //still working on here
+            }
+            return Redirect("Index");
         }
     }
 }
