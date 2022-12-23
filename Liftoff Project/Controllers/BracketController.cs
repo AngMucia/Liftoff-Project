@@ -97,7 +97,7 @@ namespace Liftoff_Project.Controllers
             myBrackets1.Add(team9);
             Console.WriteLine(myBracket.BracketTeams);
             ViewBag.MyBrackets1 = myBrackets1;
-            return View("ViewBracket");
+            return View("index");
         }
 
         [HttpGet]
