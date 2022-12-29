@@ -105,3 +105,4 @@ C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.dll
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.pdb
 C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Liftoff Project.genruntimeconfig.cache
+C:\Users\z3whu\OneDrive\Desktop\Liftoff Project\Liftoff-Project\Liftoff Project\obj\Debug\netcoreapp3.1\Razor\Views\Bracket\Delete.cshtml.g.cs

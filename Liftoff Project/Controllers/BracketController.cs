@@ -24,7 +24,7 @@ namespace Liftoff_Project.Controllers
             context = dbContext;
         }
         private string baseUrl = "http://api.cup2022.ir/api/v1/";
-        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzE3NDcxMjQsImV4cCI6MTY3MTgzMzUyNH0.lf3H2fC6j3WtG_pDnGDzxMhE-T47bpADwcYzkvpaNjU";
+        private string bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg5MTNlNWZhNzhmOWNkZjQxMzg2ODEiLCJpYXQiOjE2NzIyNzEyMzEsImV4cCI6MTY3MjM1NzYzMX0.n8yRDpZDhYqTvnewzXhYunaUoJ46npoLtynRPQH9fcI\r\n";
         Task<IList<Team>> teams;
         public async Task<IList<Team>> GetTeams()
         {
@@ -160,18 +160,24 @@ namespace Liftoff_Project.Controllers
 
             ViewBag.User = user;
             ViewBag.BracketId = bracket;
-            //might change code in here
+           
+          
 
             return View();
         }
         [HttpPost]
-        public IActionResult Delete(int[] Id)
+        public IActionResult Delete(int[] BracketIds)
         {
-            foreach(int id in Id)
+            IdentityUser user = context.Users.Single(u => u.UserName == User.Identity.Name);
+            foreach (int bracketId in BracketIds)
             {
-                //still working on here
+                Bracket theBracket = context.Brackets.Find(bracketId, user.Id);
+                context.Brackets.Remove(theBracket);
+                
             }
-            return Redirect("Index");
+            Console.WriteLine(BracketIds.Length);
+            context.SaveChanges();
+            return Redirect("ViewBracket");
         }
     }
 }

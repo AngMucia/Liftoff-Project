@@ -1,0 +1,40 @@
+﻿@model Liftoff_Project.Controllers.BracketController
+@{
+}
+<h1>Welcome to Delete Bracket(s)!</h1>
+<br />
+@if(ViewBag.User == null)
+{
+    <h2>Please Login or Register first to use this feature</h2>
+    <br />
+    <p>You do not have access to this yet!</p>
+}
+else if(ViewBag.BracketId.Count == 0)
+{
+    <div>
+     <h2>There Are No Brackets to Delete Here</h2>
+            <br />
+            <p>Lets go and create a bracket!</p>
+        <a href="~/Bracket/CreateBracket" class="btn btn-info" role="button">Create A Bracket</a>
+    </div>
+}
+else
+{
+<h2>Please select a bracket to delete.</h2>
+<body>
+<div>
+    <form method="post">
+        @for (int i = 0; i < ViewBag.BracketId.Count; i++)
+        {
+               <input type="checkbox" id="@ViewBag.BracketId[i].Id" name="BracketIds" value="@ViewBag.BracketId[i].Id"/>
+               <label for="@ViewBag.BracketId[i].Id">@ViewBag.BracketId[i].Id</label><br />
+        }
+        <input class="btn btn-info" type="submit" value="Submit">
+    </form>
+    </div>
+    <br />
+    <div>
+        <a href="~/Home" class="btn btn-info" role="button">Go Back Home</a>
+    </div>
+</body>
+}

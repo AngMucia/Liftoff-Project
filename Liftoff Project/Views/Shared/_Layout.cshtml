@@ -6,6 +6,69 @@
     <title>@ViewData["Title"] - World Cup</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mynav_navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .mynav_navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        .mynav_dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .mynav_dropdown .mynav_dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .mynav_navbar a:hover, .mynav_dropdown:hover .mynav_dropbtn {
+                background-color: red;
+            }
+
+        .mynav_dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .mynav_dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .mynav_dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .mynav_dropdown:hover .mynav_dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,26 +81,24 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="CreateBracket">Create Bracket</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="CompareBracket">Compare Bracket</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="ViewBracket">View Bracket</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="TeamStats" asp-action="ViewTeamStandings">Team Standings</a>
-                        </li>
-                    </ul>
+                    <div class="mynav_navbar flex-grow-1">
+                        
+                        <a class="nav-item" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-item" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-item" asp-area="" asp-controller="TeamStats" asp-action="ViewTeamStandings">Team Standings</a>
+                        <div class="mynav_dropdown">
+                            <button class="mynav_dropbtn">
+                                Brackets
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="mynav_dropdown-content">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="CreateBracket">Create Bracket</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="CompareBracket">Compare Bracket</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="ViewBracket">View Bracket</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Bracket" asp-action="Delete">Delete Bracket</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
