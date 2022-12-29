@@ -91,3 +91,24 @@
         </tbody>
     </table>
 </div>
+
+<button id="topBtn" class="topBtn" style="background-color: transparent"><img style="background-color: transparent;" src="https://www.pngkey.com/png/full/602-6025868_up-light-blue-up-arrow.png" width="50" height="50" /></button>
+
+<script>
+    let toTopBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+            toTopBtn.style.display = "block";
+        } else {
+            toTopBtn.style.display = "none";
+        }
+    }
+    toTopBtn.addEventListener("click", topFunction);
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
